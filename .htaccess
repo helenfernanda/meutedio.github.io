@@ -1,6 +1,4 @@
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^helenfernanda.uphero.com
-RewriteRule ^ http://web.htmhelen.com%{REQUEST_URI} [L,R=301]
 
 ErrorDocument 400 /index.html
 ErrorDocument 401 /index.html
