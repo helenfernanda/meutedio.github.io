@@ -1,0 +1,4 @@
+::-webkit-scrollbar {background:#ffffff; width:30px; height:30px;}
+::-webkit-scrollbar-thumb {background:orange url(http://meutedio.freetzi.com/bg-para-barra.png) repeat;}
+::-webkit-scrollbar-track {background:#ffffff;}
+::-webkit-scrollbar-corner {background:orange url(http://meutedio.freetzi.com/bg-para-barra.png) repeat;}

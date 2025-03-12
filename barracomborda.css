@@ -1,0 +1,4 @@
+::-webkit-scrollbar {background:#ffffff; width:20px; height:20px;}
+::-webkit-scrollbar-thumb {background:lightyellow; border:2px dashed orange;}
+::-webkit-scrollbar-corner {background:#ffffff;}
+::-webkit-scrollbar-track {background:#ffffff;}

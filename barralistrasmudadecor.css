@@ -1,0 +1,5 @@
+::-webkit-scrollbar {background:#ffffff; width:20px; height:20px;}
+::-webkit-scrollbar-thumb {background:repeating-linear-gradient(45deg,transparent,transparent 10px,#909 10px,#909 20px), linear-gradient(to bottom,#eee,#999);}
+::-webkit-scrollbar-thumb:hover {background:repeating-linear-gradient(45deg,transparent,transparent 10px,#9c0 10px,#9c0 20px), linear-gradient(to bottom,#eee,#999);}
+::-webkit-scrollbar-thumb:active {background:repeating-linear-gradient(45deg,transparent,transparent 10px,#09c 10px,#09c 20px), linear-gradient(to bottom,#eee,#999);}
+::-webkit-scrollbar-corner {background:#ffffff;}

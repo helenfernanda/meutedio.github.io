@@ -1,0 +1,8 @@
+::-webkit-scrollbar {background:#fff; width:15px; height:15px;} /* barra de rolagem toda */
+::-webkit-scrollbar-thumb {box-shadow:0 0 0 0; background: linear-gradient(to right,#ccc,#999,#ccc,#999);} /* parte da barra que se movimenta */
+::-webkit-scrollbar-thumb:hover {box-shadow:0 0 0 0; background: linear-gradient(to right,chocolate,brown,chocolate,brown);} /* parte da barra que se movimenta */
+::-webkit-scrollbar-thumb:active {box-shadow:0 0 0 0; background: linear-gradient(to right,#9c0,#690,#9c0,#690);} /* parte da barra que se movimenta */
+::-webkit-scrollbar-button {background:;} /* ponta da barra de rolagem */
+::-webkit-scrollbar-track {background:#fff;} /* fundo da barra de rolagem, parte fixa */
+::-webkit-scrollbar-track-piece {background:#fff;} /* fundo da barra de rolagem, parte que ainda falta rolar */
+::-webkit-scrollbar-corner {background:#fff;} /* canto inferior direito da barra de rolagem */
