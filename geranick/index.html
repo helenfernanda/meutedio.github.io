@@ -1,7 +1,7 @@
 <head>
 <style>
-body {background:#fff; color:#000; font-family:verdana; font-size:12px;}
-input {font-family:Verdana, Geneva, sans-serif; font-size:11px; border:1px dashed #996;}
+body {font-family:verdana; font-size:1em; color:#fff;}
+input {font-family:Verdana, Geneva, sans-serif; font-size:1em; border:1px dashed #996;}
 input:hover {border:1px solid black; background:#f0f0fF;}
 input:active {border:1px solid #F90; background:#FFfff0; color:#009;}
 </style>
@@ -9,11 +9,11 @@ input:active {border:1px solid #F90; background:#FFfff0; color:#009;}
 
 <body>
 
+<div style="margin-left:auto;margin-right:auto">
 
-
-<form name="form1"><center>Digite
-
- o nick: <input size="20" value="Exemplo" name="entrada"><br><BR><input onClick="execmcpensadoraltera()" value="Criar" type="button"><br><BR>Nick alterado: <input size="20" value="" name="saida"></center>
+<div><form name="form1">Digite o nick: <input size="20" value="Meu Tédio" name="entrada"> <input onClick="execmcpensadoraltera()" value="Criar" type="button">
+</div>
+    <div>Nick alterado: <input size="20" value="" name="saida"></div>
 
 <script> function mcpensadorzerar() {document.form1.entrada.value='';document.form1.saida.value=''}</script>
 
@@ -184,7 +184,7 @@ return n}
  }
 
 </script>
-
-</center></form>
+</form>
+</div>
 
 </body>
