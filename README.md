@@ -1,2 +1,2 @@
 # meutedio.github.io
-Exemplos e outros recursos adicionais de tutoriais do Meu Tédio.
+Exemplos e outros recursos adicionais de tutoriais do blog Meu Tédio: www.meutedio.com
