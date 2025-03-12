@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^helenfernanda.uphero.com
+RewriteRule ^ http://web.htmhelen.com%{REQUEST_URI} [L,R=301]
+
+ErrorDocument 400 /index.html
+ErrorDocument 401 /index.html
+ErrorDocument 403 /index.html
+ErrorDocument 404 /index.html
+ErrorDocument 500 /index.html
+
+# Do not remove this line, otherwise mod_rewrite rules will stop working
+RewriteBase /
+

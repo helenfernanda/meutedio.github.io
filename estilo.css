@@ -1,0 +1,74 @@
+body {color:#ccc; font-family:trebuchet ms; background:#333; border:0px; margin:10px; margin-top:0px; padding-top:0; font-size:1em;}
+body.white {color:#666; background:#fff; border:0px;}
+
+body::-webkit-scrollbar {background:#333; width:15px; height:15px;} /* barra de rolagem toda */
+body::-webkit-scrollbar-thumb {background:#333; box-shadow:0px 0px 2px 2px #fff inset;} /* parte da barra que se movimenta */
+body::-webkit-scrollbar-thumb:hover {background:#333; box-shadow:0px 0px 2px 2px #f90 inset;} /* parte da barra que se movimenta */
+body::-webkit-scrollbar-thumb:active {background: #333; box-shadow:0px 0px 2px 2px #9c0 inset;} /* parte da barra que se movimenta */
+body::-webkit-scrollbar-button {background:;} /* ponta da barra de rolagem */
+body::-webkit-scrollbar-track {background:#333;} /* fundo da barra de rolagem, parte fixa */
+body::-webkit-scrollbar-track-piece {background:#333;} /* fundo da barra de rolagem, parte que ainda falta rolar */
+body::-webkit-scrollbar-corner {background:#333;} /* canto inferior direito da barra de rolagem */
+
+
+body.white::-webkit-scrollbar {background:#fff; width:15px; height:15px;} /* barra de rolagem toda */
+body.white::-webkit-scrollbar-thumb {box-shadow:0 0 0 0; background: linear-gradient(to right,#ccc,#999,#ccc,#999);} /* parte da barra que se movimenta */
+body.white::-webkit-scrollbar-thumb:hover {box-shadow:0 0 0 0; background: linear-gradient(to right,chocolate,brown,chocolate,brown);} /* parte da barra que se movimenta */
+body.white::-webkit-scrollbar-thumb:active {box-shadow:0 0 0 0; background: linear-gradient(to right,#9c0,#690,#9c0,#690);} /* parte da barra que se movimenta */
+body.white::-webkit-scrollbar-button {background:;} /* ponta da barra de rolagem */
+body.white::-webkit-scrollbar-track {background:#fff;} /* fundo da barra de rolagem, parte fixa */
+body.white::-webkit-scrollbar-track-piece {background:#fff;} /* fundo da barra de rolagem, parte que ainda falta rolar */
+body.white::-webkit-scrollbar-corner {background:#fff;} /* canto inferior direito da barra de rolagem */
+
+
+
+div#contem {padding:20px; font-size:1em;}
+ul#nav li {display:inline; padding:10px}
+
+h1 {font-size:3.0em;}
+h2 {color:#f90; font-size:2.0em; margin: 1em auto 0.3em;}
+
+body.white h1 {color:chocolate;}
+body.white h2 {color:hotpink;}
+
+dt, dd.price {font-size:1.8em; font-weight:bold}
+dt {color:#99cc00; padding-right:3px;}
+dd {font-size:1.5em; padding-bottom:20px;}
+dd.valor {font-size:25px; color:#ccc; float:right; padding-left:3px}
+dd.detalhes {font-style:italic; color:#fff; float:left; padding:3px 0; width:100%;border-top:1px dashed #ccc;}
+p {font-size:0.9em;text-align:left; margin-top:60px;}
+
+#ring {padding:20px;}
+#ring h1 {font-size:40px;}
+#ring h2 {font-size:30px;}
+#ring p {margin-top:auto;}
+#ring dl {-moz-column-width: 330px; -webkit-column-width: 330px; -o-column-width:330px; column-width:330px;}
+#ring dt {text-align:center; float:none; padding-right:inherit; margin-top:25px; margin-bottom:10px; font-size:13px;   break-before:auto; break-inside: avoid-column; break-after: avoid-column;}
+#ring dd {margin:auto; text-align:center; break-before:avoid-column; break-inside: avoid-column; break-after:auto;}
+#ring a {color:skyblue;}
+#ring a:hover {color:linen;}
+
+body.white a {color:#007FDB}
+body.white a:hover {color:olive;}
+body.white a:active {color:deeppink;}
+
+a {color:lightblue;}
+a:hover {color:#99cc00;}
+a:active {color:lightpink;}
+
+a img {border:0;}
+a:hover img {border:0;}
+a:active img {border:0;}
+a:link img {border:0;}
+a:visited img {border:0;}
+
+.blue {color:blue;} .red {color:red;}
+
+code, .code {font-family:'courier new'; color:#ffffff;}
+.code {padding:10px; border:1px lime dotted;}
+
+body.white code, body.white .code {color:navy;}
+body.white .code {border:1px blue dotted;}
+
+video {margin-top:20px; margin-bottom:30px; margin-left:auto; margin-right:auto; text-align:center; display:block;}
+audio {margin-left:auto; margin-right:auto; text-align:center; float:none; display:block;}

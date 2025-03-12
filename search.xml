@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+<ShortName>Buscar no www.meutedio.com.br</ShortName>
+<Description>perfume, html, css, consumo, dinheiro, dicas</Description>
+<InputEncoding>iso-8859-1</InputEncoding>
+<OutputEncoding>iso-8859-1</OutputEncoding>
+<Url type="text/html" template="http://www.meutedio.com.br/search?q={searchTerms}"/>
+<Image height="16" width="16" type="image/x-icon">http://www.meutedio.com.br/favicon.ico</Image>
+<Language>pt-BR</Language>
+<Developer>Helen Fernanda Alves Martins</Developer>
+</OpenSearchDescription>

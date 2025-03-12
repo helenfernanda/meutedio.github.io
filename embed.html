@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<title>Tags embed, iframe e object | HTML 5 | Meu Tédio</title>
+	
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+<link type='text/css' rel='stylesheet' href='estilo.css'/>
+	
+	<style>
+		body {text-align:center; margin-left:auto; margin-right; margin:20px; border:0;}
+		h1, p, li, h2 {text-align:left;}
+		p {margin-top:0; margin-top:0;}
+		.square {width:400px; height:400px;}
+		nav {margin-top:20px; margin-bottom:20px;}
+	</style>
+
+</head>
+	
+<body class='white'>
+	<div style='text-align:left;'>
+	
+	
+		<div style='float:left;'><nav> <a href="embed.html">Embed</a> | <a href="index.html#menu">Menu</a> | <a href="http://www.meutedio.com.br" target="_blank">Blog</a></nav></div>
+		
+		<div style='width:400px; float:right;'>
+		<!-- início da busca -->
+<script>
+  (function() {
+    var cx = 'partner-pub-2810932839099491:jw7n8ai459q';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox></gcse:searchbox>
+<!-- fim da busca -->
+	</div>
+
+		<br>
+				
+		<gcse:searchresults></gcse:searchresults>
+		
+		
+	
+	<h1>Tags de incorporação</h1>
+
+	<p>Abaixo mostro os mesmos arquivos sendo exibidos com as tags &lt;embed&gt;, &lt;iframe&gt; e &lt;object&gt;, nessa ordem.<B>
+
+<h3>Código:</h3>		
+		
+		<div class='code'>&lt;embed width:400px; height:400px; src="<mark>arquivo.ext</mark>"/&gt;<br>
+&lt;iframe style="width:400px; height:400px;" src="<mark>arquivo.ext</mark>"&gt;&lt;/iframe&gt;<br>	
+&lt;object width:400px; height:400px; data="<mark>arquivo.ext</mark>"&gt;&lt;/object&gt;</div>		
+	
+<h3>Informações:</h3>		
+	
+<ul>
+<li>Por padrão, a tag <code>&lt;iframe&gt;</code> exibe uma borda em volta da "página". Para remover isso, basta usar <code>style="border:0;"</code>.</li>
+<li>No Google Chrome, todas as tags exibiram os arquivos do mesmo modo, exceto a borda em <code>&lt;iframe&gt;</code>.</li>
+	<li>No Mozilla Firefox, a tag <code>&lt;embed&gt;</code> teve dificuldade para exibir vários tipos de arquivos.</li>
+<li>Não fiz testes no Internet Explorer porque não tenho Windows em casa.
+</ul>
+	
+<h3>Formatos de arquivos (extensões) testados:</h3>	
+	
+<ol>
+	<li><a href="#png">Imagem .png</a></li>
+	<li><a href="#ogv">Vídeo .ogv</a></li>
+	<li><a href="#swf">Animação .swf</a></li>
+	<li><a href="#html">Página .html</a></li>
+	<li><a href="#pdf">Documento .pdf</a></li>
+	<li><a href="#txt">Documento .txt</a></li>
+	<li><a href="#css">Documento .css</a></li>
+	<li><a href="#jscript">Documento .js</a></li>
+</ol>
+	
+</div>
+	
+<h2 id='png'>1. Imagem .png</h2>
+	
+<ul>
+<li>Na tag <code>&lt;iframe&gt;</code> a imagem é exibida em tamanho real, as outras duas a esticam, de acordo com o tamanho definido para o elemento.</li>
+	<li><b>Atenção!</b> Este é apenas um teste de incorporação a forma correta de exibir imagens é <code>&lt;img src="imagem.png"/&gt;</code>.
+</ul>
+	
+<embed class='square' src="http://meutedio.freetzi.com/bg-para-barra.png"/>
+	
+<iframe class='square' src="http://meutedio.freetzi.com/bg-para-barra.png"></iframe>	
+	
+<object class='square' data="http://meutedio.freetzi.com/bg-para-barra.png"></object>		
+
+<h2 id='ogv'>2. Vídeo .ogv</h2>	
+	
+	<ul>
+	
+		<li><b>Atenção!</b> Este é apenas um teste de incorporação, a tag correta para exibição de vídeos é <code>&lt;video&gt;</code>. Saiba mais no tutorial <a href="http://www.meutedio.com.br/2012/04/mostrar-video-com-html-5.html">Mostrar vídeo com HTML 5</a>.</li>
+	</ul>
+	
+<embed class='square' src="http://meutedio.freetzi.com/videos/nina.ogv"/>
+	
+<iframe class='square' src="http://meutedio.freetzi.com/videos/nina.ogv"></iframe>	
+	
+<object class='square' data="http://meutedio.freetzi.com/videos/nina.ogv"></object>		
+	
+	
+<h2 id='swf'>3. Animação .swf</h2>	
+
+<embed class='square' src="http://www.w3schools.com/tags/helloworld.swf" type="application/x-shockwave-flash"/>
+
+<iframe class='square' src="http://www.w3schools.com/tags/helloworld.swf"></iframe>	
+
+<object class='square' data="http://www.w3schools.com/tags/helloworld.swf"></object>		
+
+
+<h2 id='html'>4. Página .html</h2>
+	
+	<ul>
+		<li>A tag recomendada para essa finalidade é <code>&lt;iframe&gt;</code>.</li>
+	</ul>
+	
+<embed class='square' src="mark.html"/>
+
+<iframe class='square' src="mark.html"></iframe>
+	
+<object class='square' data="mark.html"></object>
+	
+	
+
+	
+	<h2 id='pdf'>5. Documento .pdf</h2>
+	
+	<embed class='square' src="perfil-de-blogueiros-corporativos.pdf"/>
+
+	<iframe class='square' src="perfil-de-blogueiros-corporativos.pdf"></iframe>
+
+	<object class='square' data="perfil-de-blogueiros-corporativos.pdf"></object>
+	
+	
+	<h2 id='txt'>6. Documento .txt</h2>
+
+	
+	<embed style='background:#ffffff;' class='square' src="texto.txt"/>
+
+	<iframe style='background:#ffffff;' class='square' src="texto.txt"></iframe>
+
+	<object style='background:#ffffff;' class='square' data="texto.txt"></object>
+	
+	<h2 id='css'>7. Documento .css</h2>
+
+		<p>Este é o formato da folha de estilos em cascata.</p>
+	
+	<embed style='background:#ffffff;' class='square' src="estilo.css"/>
+
+	<iframe style='background:#ffffff;' class='square' src="estilo.css"></iframe>
+
+	<object style='background:#ffffff;' class='square' data="estilo.css"></object>
+		
+<h2 id='jscript'>8. Documento .js</h2>
+
+		<p>Este é o formato de um código JavaScript.</p>
+	
+	<embed style='background:#ffffff;' class='square' src="frase.js"/>
+
+	<iframe style='background:#ffffff;' class='square' src="frase.js"></iframe>
+
+	<object style='background:#ffffff;' class='square' data="frase.js"></object>			
+
+		<br><br>
+	<div class='center'><a href="#">volte para o topo ↑</a></div>
+	<hr>
+	
+	</body>
+

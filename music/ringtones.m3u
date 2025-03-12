@@ -1,0 +1,10 @@
+#EXTM3U
+
+########### MÚSICA ###################
+
+#EXTINF:-1 tvg-id="" group-title="Música" tvg-name="1HD" tvg-logo="",Anderson Lane
+Anderson_Lane.mp3
+
+
+#EXTINF:-1 tvg-id="" group-title="Música" tvg-name="1HD" tvg-logo="",Bubble Island
+Bubble_Island.mp3

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Tag vídeo com autoplay e loop :: HTMHelen</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link type="text/css" rel="stylesheet" href="http://web.htmhelen.com/estilo.css" />
+</head>
+
+<body>
+
+<h1>Tag &lt;vídeo&gt; com autoplay e loop</h1>
+
+<code><pre>
+&lt;video width="700px" controls="controls" <mark>autoplay="autoplay"</mark> preload="preload" <mark>loop="loop"</mark>&gt;
+  &lt;source src="http://web.htmhelen.com/videos/nina.mp4" type="video/mp4" /&gt;
+  &lt;source src="http://web.htmhelen.com/videos/nina.ogv" type="video/ogg" /&gt;
+  &lt;source src="http://web.htmhelen.com/videos/nina.webm" type="video/webm" /&gt;
+&lt;/video&gt;
+</pre></code>
+
+
+<h3>Com autoplay:</h3>
+
+<div><code>&lt;video width="700px" controls="controls" <mark>autoplay="autoplay"</mark> preload="preload"&gt;</code></div>
+
+<video width="700px" controls="controls" autoplay="autoplay" preload="preload">
+  <source src="http://web.htmhelen.com/videos/nina.mp4" type="video/mp4" />
+  <source src="http://web.htmhelen.com/videos/nina.ogv" type="video/ogg" />
+  <source src="http://web.htmhelen.com/videos/nina.webm" type="video/webm" />
+</video>
+
+<h3>Com autoplay e loop:</h3>
+
+<div><code>&lt;video width="700px" controls="controls" <mark>autoplay="autoplay"</mark> <mark>loop="loop"</mark> preload="preload"&gt;</code></div>
+
+<video width="700px" controls="controls" autoplay="autoplay" loop="loop" preload="preload">
+  <source src="http://web.htmhelen.com/videos/nina.mp4" type="video/mp4" />
+  <source src="http://web.htmhelen.com/videos/nina.ogv" type="video/ogg" />
+  <source src="http://web.htmhelen.com/videos/nina.webm" type="video/webm" />
+</video>
+
+<h3>Com loop, sem autoplay:</h3>
+
+<div><code>&lt;video width="700px" controls="controls" <mark>loop="loop"</mark> preload="preload"&gt;</code></div>
+
+<video width="700px" controls="controls" loop="loop" preload="preload">
+  <source src="http://web.htmhelen.com/videos/nina.mp4" type="video/mp4" />
+  <source src="http://web.htmhelen.com/videos/nina.ogv" type="video/ogg" />
+  <source src="http://web.htmhelen.com/videos/nina.webm" type="video/webm" />
+</video>
+
+<h3>Com autoplay, sem controles:</h3>
+
+<div><code>&lt;video width="700px" autoplay="autoplay" preload="preload"&gt;</code></div>
+
+<video width="700px" preload="preload" autoplay="autoplay">
+  <source src="http://web.htmhelen.com/videos/nina.mp4" type="video/mp4" />
+  <source src="http://web.htmhelen.com/videos/nina.ogv" type="video/ogg" />
+  <source src="http://web.htmhelen.com/videos/nina.webm" type="video/webm" />
+</video>
+
+</body>
+</html>

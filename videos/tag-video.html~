@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Tag de Vídeo - HTML 5 - HTMHelen</title>
+<link type='text/css' rel='stylesheet' href='../estilo.css'></link>
+</head>
+
+<h3>nina.webm com &lt;video></h3>
+<video width="320" height="240" controls="controls" src="nina.webm" type="video/webm">
+Seu navegador não suporta webm.
+</video> 
+<hr>
+
+<h3>nina.ogv</h3>
+<video width="320" height="240" controls="controls" src="nina.ogv" type="video/ogg">
+Seu navegador não suporta webm.
+</video> 
+<hr>
+
+<h3>&#207; nina.wmv com &lt;object></h3>
+
+<object width="500px" height="250px"
+type="video/x-ms-asf" url="nina.wmv" data="nina.wmv"
+classid="CLSID:6BF52A52-394A-11d3-B153-00C04F79FAA6">
+<param name="url" value="nina.wmv">
+<param name="filename" value="nina.wmv">
+<param name="autostart" value="1">
+<param name="uiMode" value="full" />
+<param name="autosize" value="1">
+<param name="playcount" value="1"> 
+<embed type="application/x-mplayer2" src="nina.wmv" width="500px" height="250px" autostart="true" showcontrols="true" pluginspage="http://www.microsoft.com/Windows/MediaPlayer/"></embed>
+</object>
+
+<br>
+
+<h3>nina.mp4</h3>
+<video width="320" height="240" controls="controls">
+  <source src="nina.mp4" type="video/mp4" />
+</video>
+
+
+<h3>nina.ogv</h3>
+<video loop='loop' controls="controls" src="nina.ogv">
+  Your browser does not support the video tag.
+</video> 
+
+<h3>nina.mp4 ou nina.ogv</h3>
+<video width="320" height="240" controls="controls" loop='loop'>
+  <source src="nina.mp4" type="video/mp4" />
+  <source src="nina.ogv" type="video/ogg" />
+  Your browser does not support the video tag.
+</video>
+
+<hr>
+<h3></h3>
+<h3>nina.mp4 ou nina.ogv</h3>
+<video width="320" height="240" controls="controls" loop='loop'>
+  <source src="nina.mp4" type="video/mp4" />
+  <source src="nina.ogv" type="video/ogv" />
+  Your browser does not support the video tag.
+</video>

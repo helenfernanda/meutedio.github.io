@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8"/>
+<meta name="author" content="Helen Fernanda">
+<head>
+
+<title>TV Meu Tédio | HTMHelen | Helen Fernanda</title>
+
+<style>
+    @import url("https://www.meutedio.com.br");
+    @import url("https://htmhelen.webcindario.com");
+</style>
+
+</head>
+
+<body>
+
+<p>Detalhes sobre a lista <B>TV Meu Tédio</B>no blog: <a href="www.meutedio.com.br/tv">www.meutedio.com.br/tv</a>.</p>
+
+<script>
+    function populatePre(url) {
+        var xhr = new XMLHttpRequest();
+        xhr.onload = function () {
+            document.getElementById('contents').textContent = this.responseText;
+        };
+        xhr.open('GET', url);
+        xhr.send();
+    }
+    populatePre('https://raw.githubusercontent.com/helenfernanda/gratis/main/iptvlegal.m3u');
+</script>
+    
+<textarea style="width:100%; height:500px; border:1px dashed #99cc00;" id="contents"></textarea>
+
+<!-- <iframe src="iptvlegal.m3u" width="100%" height="500px"/> -->
+
+
+
+</body>
+</html>
