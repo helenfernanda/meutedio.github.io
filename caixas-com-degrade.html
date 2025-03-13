@@ -9,12 +9,12 @@
     font-size: 300%;
     background-image: linear-gradient(
       to left,
-      red,
-      orange,
-      yellow,
-      green,
-      cyan,
-      blue,
+      darkred,
+      darkorange,
+      yellowgreen,
+      darkgreen,
+      darkcyan,
+      darkblue,
       indigo
     );
     background-size: cover !important;
@@ -74,19 +74,21 @@
     background-color: #eec0c6;
     background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
   }
-  code {background-color:rgba(255,255,255,0.5);}
+  code {background-color:rgba(255,255,255,0.5); font-family:monospace;color:#000}
+  code:hover {color:#000;font-weight:bold; background-color:#fff;}
+  code:active {color:#fff;background-color:#000;}
   </style></head>
 
 <body><h1>Testando Cores e Degradê</h1>
 
 <div class='colorida'><code>.colorida {background-color: #eec0c6; background-image: linear-gradient(315deg, orange 0%, #7ee8fa 74%);}</code></div>
 
-
-
-<div class="arcoiris">Mamãe mandou eu escolher essa daqui.</div>
-<div class="sonholavanda">A esperança é a última que morre.</div>
-<div class="liar">Nada disso deveria ter acontecido.</div>
-<div class="fraude">Ninguém pode provar esse crime.</div>
-<div class='suave'>Foi bom demais e foi verdade.</div>
-<div style="background-color:tawny;">Saudosismos</div>
+<div class="arcoiris"><code>.arcoiris {
+    color: #fff;
+    background-color: #7fd82b;
+    background-image: linear-gradient(319deg, #7fd82b 0%, #ef4063 37%, teal 100%);}</code></div>
+<div class="sonholavanda"><code>.sonholavanda {background-color: #91d370; background-image: linear-gradient(319deg,#91d370 0%,#bca0ff 37%,#f2cd54 100%);}</code></div>
+<div class="liar"><code>.liar {color: #fff;background-color: #c73e1d; background-image: linear-gradient(315deg,#c73e1d 0%,#a23b72 37%,   #2e86ab 100%);}</code></div>
+<div class="fraude"><code>.fraude {color: #fff;    background-color: #0cbaba; background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);}</code></div>
+<div class='suave'><code>.suave {color: #fff;    background-color: #eec0c6; background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);}</code></div>
 </body></html>
