@@ -1,0 +1,222 @@
+<html>
+<head>
+<meta http-equiv="Page-Enter" content="revealTrans(Duration=1.0,Transition=23)">
+<meta http-equiv="Page-Exit" content="revealTrans(Duration=1.0,Transition=23)">
+<meta http-equiv=Pragma content=no-cache>
+<link rel="stylesheet" href="estilo.css" TYPE="text/css">
+<script LANGUAGE="JavaScript">
+<!--
+          function stopError() {
+          return true;
+          }
+
+          window.onerror = stopError;
+
+  // -->
+</script>
+<!-- NÃO SE ESQUEÇA DE COLOCAR    onload="init()"  dentro de Body -->
+
+</head>
+
+<body onload="init()">
+
+<script language="JavaScript"><!--
+        text=new Array('Este','código','gera','um','Texto em zoom')
+        var numText=5
+        color=new Array('navy', 'blue', 'royalblue', 'dodgerblue', 'skyblue')
+        var numColors=5
+        var endSize=40
+        var Zspeed=75
+        var Cspeed=300
+        var font='garamond, times new roman'
+        var hide=false
+        var gonum=0
+        var ie, n;
+if (document.all) {
+                n=0
+                ie=1
+                zoomText='document.all.zoom.innerText=text[num]'
+                zoomSize='document.all.zoom.style.fontSize=size'
+                closeIt=""
+                fadeColor="document.all.zoom.style.color=color[num]"}
+if (document.layers) {
+                n=1;ie=0
+                zoomText=""
+                zoomSize="document.zoom.document.write('<p align=\"LEFT\" style=\"font-family:'+font+'; font-size:'+size+'px; color:'+color[0]+'\">'+text[num]+'</p>')"
+                closeIt="document.zoom.document.close()"
+                fadeColor="document.zoom.document.write('<p align=\"LEFT\" style=\"font-family:'+font+'; font-size:'+endSize+'px; color:'+color[num]+'\">'+text[numText-1]+'</p>')"
+        }
+function zoom(num,fn){
+        if (size<endSize){
+                eval(zoomText)
+                eval(zoomSize)
+                eval(closeIt)
+                size+=5;
+                setTimeout("zoom("+num+",'"+fn+"')",Zspeed)
+        }else{
+            eval(fn);
+        }
+}
+function fadeIt(num){
+        if (num<numColors){
+                eval(fadeColor)
+                eval(closeIt)
+                num+=1;
+               setTimeout("fadeIt("+num+")",Cspeed)
+        }else{
+              hideIt()
+        }
+}
+function hideIt(){
+        if(hide){
+                if(ie)document.all.zoom.style.visibility="hidden"
+                if(n)document.layers.zoom.visibility="hidden"
+        }
+}
+function init(){
+        if(ie){
+                document.all.zoom.style.color=color[0]
+                document.all.zoom.style.fontFamily=font
+        }
+       if(ie || n) go(0)       
+}
+function go(num){
+        gonum+=1
+        size=10
+        if(num<numText){
+                zoom(num,'go('+gonum+')')
+        }else{
+                fadeIt(0)
+        }
+}
+// --></script> 
+
+<h2 id="zoom" style="text-align:center; position:absolute;"></h2>
+<div  style='margin-top:75;'>
+
+<p>Você pode modificar as primeiras linhas do código:</p>
+
+<DL>
+<dt><B>text=new Array ('','','','','')</b>
+<DD>Dentro dos parênteses, entre aspas simples e separados por vírgula escreva os textos que aparecerão.
+
+<dt><B>var numText=5</b>
+<DD>Aqui você especifica o número de textos que você escreveu acima (cada par de aspas é um texto).
+
+<dt><B>color=new Array ('','','','','','','','','','')</b>
+<DD>Dentro das aspas você escreve as cores do último texto. A última cor é a cor definitiva.
+
+<DT><B>var numColors=10</b>
+<DD>É o número de cores que você escreveu acima.
+
+<DT><B>var endSize=50</b>
+<DD>É o tamanho do texto.
+
+<DT><B>var Zspeed=75</b>
+<DD>É a velocidade em que o texto se aproxima.
+
+<DT><B>var Cspeed=145</b>
+<DD>É a velocidade em que as cores do último texto mudam.
+
+<DT><B>var font='garamond, times new roman'</b>
+<DD>É a fonte do texto.
+</dl>
+
+<p>Todo o texto que deve vir abaixo do <B>texto em zoom</b> deve vir abaixo da tag <B>div style='margin-top:100;'</b>. Se o número especificado no parâmetro <B>margin-top</b> for menor que o espaço que o <B>texto em zoom</b> ocupa ou simplesmente não for especificado, o texto em zoom ficará por cima do que estiver embaixo. Isso pode ser legal se você quiser que o texto em zoom fique sobre algum outro texto ou sobre uma figura.</p>
+
+<center>
+<textarea>
+<script LANGUAGE="JavaScript">
+<!--
+          function stopError() {
+          return true;
+          }
+
+          window.onerror = stopError;
+
+  // -->
+</script>
+<!-- NÃO SE ESQUEÇA DE COLOCAR    onload="init()"  dentro de Body -->
+
+</head>
+
+<body onload="init()">
+
+<script language="JavaScript"><!--
+        text=new Array('Agradecemos','a visita!','Volte sempre','ao site','Net Mania')
+        var numText=5
+        color=new Array('navy', 'purple', 'darkred', 'black', 'gray', 'darkgreen', 'darkorange', 'teal', 'salmon', 'hotpink')
+        var numColors=10
+        var endSize=50
+        var Zspeed=75
+        var Cspeed=145
+        var font='garamond, times new roman'
+        var hide=false
+        var size=5
+        var gonum=0
+        var ie, n;
+if (document.all) {
+                n=0
+                ie=1
+                zoomText='document.all.zoom.innerText=text[num]'
+                zoomSize='document.all.zoom.style.fontSize=size'
+                closeIt=""
+                fadeColor="document.all.zoom.style.color=color[num]"}
+if (document.layers) {
+                n=1;ie=0
+                zoomText=""
+                zoomSize="document.zoom.document.write('<p align=\"LEFT\" style=\"font-family:'+font+'; font-size:'+size+'px; color:'+color[0]+'\">'+text[num]+'</p>')"
+                closeIt="document.zoom.document.close()"
+                fadeColor="document.zoom.document.write('<p align=\"LEFT\" style=\"font-family:'+font+'; font-size:'+endSize+'px; color:'+color[num]+'\">'+text[numText-1]+'</p>')"
+        }
+function zoom(num,fn){
+        if (size<endSize){
+                eval(zoomText)
+                eval(zoomSize)
+                eval(closeIt)
+                size+=5;
+                setTimeout("zoom("+num+",'"+fn+"')",Zspeed)
+        }else{
+            eval(fn);
+        }
+}
+function fadeIt(num){
+        if (num<numColors){
+                eval(fadeColor)
+                eval(closeIt)
+                num+=1;
+               setTimeout("fadeIt("+num+")",Cspeed)
+        }else{
+              hideIt()
+        }
+}
+function hideIt(){
+        if(hide){
+                if(ie)document.all.zoom.style.visibility="hidden"
+                if(n)document.layers.zoom.visibility="hidden"
+        }
+}
+function init(){
+        if(ie){
+                document.all.zoom.style.color=color[0]
+                document.all.zoom.style.fontFamily=font
+        }
+       if(ie || n) go(0)       
+}
+function go(num){
+        gonum+=1
+        size=10
+        if(num<numText){
+                zoom(num,'go('+gonum+')')
+        }else{
+                fadeIt(0)
+        }
+}
+// --></script> 
+
+<div id="zoom" style="position:absolute;"></div>
+<div  style='margin-top:100;'></textarea>
+
+</body>
+</html>
+

@@ -1,0 +1,44 @@
+<html>
+<meta http-equiv="Page-Enter" content="revealTrans(Duration=1.0,Transition=23)">
+<meta http-equiv="Page-Exit" content="revealTrans(Duration=1.0,Transition=23)">
+<META HTTP-EQUIV="Content-Script-Type" CONTENT="text/javascript">
+<meta http-equiv=Pragma content=no-cache>
+<head>
+<link type=text/css rel=stylesheet href=estilo.css>
+  <title>Net Mania</title>
+</head>
+<body>
+<h2>Mudando a fonte</h2>
+<form>
+
+<p onMouseOver="this.style.fontFamily='comic sans ms'; 
+                this.style.fontSize='13px';" 
+   onMouseOut="this.style.fontFamily='verdana'; 
+                this.style.fontSize='11px';" 
+   onClick="this.style.fontFamily='times new roman'; 
+            this.style.fontSize='15px';">Ao passar o mouse sobre este parágrafo a fonte mudará para <B>Comic Sans MS 13px</b>. Se você clicar sobre o texto a fonte passará a ser <B>Times New Roman 15px</b>. Quando o mouse não estiver mais sobre o texto a fonte voltará a ser <B>Verdana 11px</b>.</p>
+
+<center><textarea readonly><p onMouseOver="this.style.fontFamily='comic sans ms'; 
+                this.style.fontSize='13px';" 
+   onMouseOut="this.style.fontFamily='verdana'; 
+                this.style.fontSize='11px';" 
+   onClick="this.style.fontFamily='times new roman'; 
+            this.style.fontSize='15px';">Ao passar o mouse sobre este parágrafo a fonte mudará para <B>Comic Sans MS 13px</b>. Se você clicar sobre o texto a fonte passará a ser <B>Times New Roman 15px</b>. Quando o mouse não estiver mais sobre o texto a fonte voltará a ser <B>Verdana 11px</b>.</p></textarea></center><hr>
+
+<p style='filter:glow(strength=1 color=lime); height:0;'
+   onMouseOver="this.style.filter='shadow(strength=1 color=lime)';"
+   onClick="this.style.filter='blur(strength=3)';"
+   onDBLCLICK="this.style.filter='wave(strength=2)';"
+   ONMouseOut="this.style.filter='glow(strength=1 color=lime)';">Este parágrafo utiliza o parâmetro <B>filter</b> com valor <B>glow</b>. Quando o mouse passa por aqui o filter assume valor <B>shadow</b>. Ao clicar neste parágrafo filter terá valor <B>blur</b>. Se clicar duas vezes seguidas, rapidamente, o valor de filter será <B>wave</b>. Se o mouse sair de cima o parágrafo volta a ser como era no início.</p>
+
+<center><textarea readonly>
+<p style='filter:glow(strength=1 color=lime); height:0;'
+   onMouseOver="this.style.filter='shadow(strength=1 color=lime)';"
+   onClick="this.style.filter='blur(strength=3)';"
+   onDBLCLICK="this.style.filter='wave(strength=2)';"
+   ONMouseOut="this.style.filter='glow(strength=1 color=lime)';">Este parágrafo utiliza o parâmetro <B>filter</b> com valor <B>glow</b>. Quando o mouse passa por aqui o filter assume valor <B>shadow</b>. Ao clicar neste parágrafo filter terá valor <B>blur</b>. Se clicar duas vezes seguidas, rapidamente, o valor de filter será <B>wave</b>. Se o mouse sair de cima o parágrafo volta a ser como era no início.</p>
+</textarea></center>
+
+</FORM>
+</body>
+</html>

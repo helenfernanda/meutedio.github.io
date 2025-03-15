@@ -1,0 +1,33 @@
+@import url(rosa.css);
+body {background:#ffffff;
+	 scrollbar-track-color:#ffffff;
+	 scrollbar-3dlight-color:#ffffff;
+	 scrollbar-highlight-color:#ffffff;
+	 scrollbar-shadow-color:#ffffff;
+	 scrollbar-darkshadow-color:#ffffff;
+	 scrollbar-arrow-color:#ffffff;
+	 scrollbar-face-color:#000000;}
+
+#back {background: #ffffff url(bg_branco.gif) right top repeat-y;}
+	 
+td, p {background:#000000; color:#ffffff;}
+a {color:gold;}
+a:link {color:dodgerblue;}
+a:hover {background:#ffffff; color:black;}
+
+button {background: #000000;
+	border-color: #cccccc;
+	border-right-color: #666666;
+	border-bottom-color: #666666;
+	color: #ffffff;}
+h1, h2, h3, h4, h5, #titulo {color:#ffffff;}
+input {background:#000000; border-color:#cccccc; color:#ffffff;}
+hr {color:#666666; background:#666666;}
+ul {list-style-image:url(lista_branco.jpg);}
+
+textarea  {color:#000000;
+	background :#ffffff;
+	border-color:#cccccc;}
+
+.autor, #autor, #menorhot, #quote {color:#cccccc;}	
+#caixa {border-color:#cccccc;}

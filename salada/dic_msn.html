@@ -1,0 +1,50 @@
+<html>
+<head>
+<meta http-equiv="Page-Enter" content="revealTrans(Duration=1.0,Transition=23)">
+<meta http-equiv="Page-Exit" content="revealTrans(Duration=1.0,Transition=23)">
+<meta http-equiv="Pragma" content="no-cache">
+
+<link type=text/css rel=stylesheet href="estilo.css"></link>
+
+<SCRIPT TYPE="TEXT/JAVASCRIPT" LANGUAGE="JAVASCRIPT">
+
+function toogleMenu(currMenu) {
+if (document.getElementById) {
+thisMenu = document.getElementById(currMenu).style
+if (thisMenu.display == "block") {
+thisMenu.display= "none"
+}
+else {
+thisMenu.display = "block"
+}
+return false
+}
+else {
+return true
+}
+}
+</script>
+	<title>Dicas MSN Messenger</title>
+</head>
+
+<body>
+<h2>Dicas MSN Messenger</h2>
+
+<ol>
+<li><a href="#baixar" onClick="return toogleMenu('baixar')">Como faço o download do programa?</a>
+
+<span class="menu" id="baixar"><p>O programa pode ser baixado pelo link <a href="http://messenger.msn.com.br" target="_blank">messenger.msn.com.br</a>. O download é gratuito.</p></span>
+
+<li><a href="#baixar" onClick="return toogleMenu('cadastrar')">
+Como cadastrar um NET Passport? É a mesma coisa que cadastrar um e-mail Hotmail?</a>
+
+<span class="menu" id="cadastrar"><p>A grande maioria das pessoas jura que para usar o MSN Messenger é preciso ter e-mail Hotmail ou MSN. A verdade é que qualquer e-mail válido pode ser cadastrado como Net Passport. Para cadastrar o seu e-mail favorito como Net Passport (para o Messenger e outros serviços do portal MSN), basta entrar no <a href="http://passport.net" target="_blank">passport.net</a>. Ao se cadastrar o sistema envia um e-mail de verificação. Só depois que o e-mail for verificado é que o cadastrado será liberado.</p></span>
+
+<li><a href="#baixar" onClick="return toogleMenu('contatos')">
+Mudei de e-mail, mas não quero perder toda a minha lista de contatos. O que faço?</a>
+
+<span class="menu" id="contatos"><p>Simples! No menu "Contatos" (do antigo e-mail) escolha a opção "Salvar lista de contatos". Será gerado um arquivo com a extensão ".ctt" que lembra um arquivo ".html" e pode ser editado no bloco de notas (caso ainda queira excluir ou adicionar contatos). Depois logue com o novo e-mail e escolha a opção "Importar contatos de um arquivo salvo" para fazer o upload de sua lista. Mamão com açúcar!</p></span>
+</ol>
+
+</body>
+</html>

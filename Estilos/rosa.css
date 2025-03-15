@@ -1,0 +1,106 @@
+table, body {
+        cursor:'url(cursor.ani)';                    
+        border:0px;
+        color:purple;
+	font-family : verdana;
+	font-size : 11px;
+	scrollbar-track-color:#ff0099; 
+        scrollbar-face-color:#ffffff; 
+        scrollbar-3dlight-color:#ff0099;
+        scrollbar-highlight-color:#ff0099; 
+        scrollbar-shadow-color:#ff0099; 
+        scrollbar-darkshadow-color:#ff0099; 
+        scrollbar-arrow-color:#ff0099;
+		margin:0px;}
+		
+body {background:#ff0099;}
+td {background:#ffffff; border:0px;}
+
+#table {background:transparent; width:*;}
+#back {background:#ff0099 url(bg.gif) right top repeat-y; padding:0px; width:121px;}
+
+p {text-indent : 24px;
+   text-align : justify;
+   margin:5px;}
+
+.autor, #autor {text-indent:0px;
+           text-align:right;
+           color:hotpink;}
+
+.menu {display:none;}
+
+#menor {font-size:10px;}
+#menorhot {font-size:10px; color:hotpink;}
+#caixa {border:1px solid #ffeeff; border-top:0px; border-left:0px; overflow:auto; width:200px; height:100px;}
+#topo {width:*;}
+#esquerda {width:*;}
+#direita {width:*px;}
+#quote {text-align:left; font-family:arial; font-weight:bold; font-size:13px; font-style:italic; color:#ff0099;}
+#titulo {font-family: lucida handwriting, tempus sans itc, comic sans ms; font-size:60px; color:#ff0099;}
+
+#es-rosa {cursor:crosshair; background:#ffffff; color:#ff0099; border:1px solid #ff0099;}
+#es-azul {cursor:crosshair; background:#ffffff; color:#0099ff; border:1px solid #0099ff;}
+#es-verde {cursor:crosshair; background:#ffffff; color:#009900; border:1px solid #009900;}
+#es-cinza {cursor:crosshair; background:#ffffff; color:#666666; border:1px solid #666666;}
+#es-aqua {cursor:crosshair; background:#000000; color:#00ffff; border:1px solid #00ffff;}
+#es-limao {cursor:crosshair; background:#000000; color:#00ff00; border:1px solid #00ff00;}
+#es-amarelo {cursor:crosshair; background:#000000; color:#ffff00; border:1px solid #ffff00;}
+#es-branco {cursor:crosshair; background:#000000; color:#ffffff; border:1px solid #ffffff;}
+
+dl, ol, ul {text-align :left;}
+ul {list-style-image:url(lista_rosa.jpg);}
+		
+dt {font-weight:bold;
+    color:hotpink;}
+
+h1 {font-size:32px;}
+h2 {font-size:20px;}
+h3 {font-size:17px;}
+h4 {font-size:13px;}
+
+h1, h2, h3, h4  {color:hotpink;
+        font-family :'comic sans ms';
+		font-weight:normal;}
+
+hr  {color:#ff0099; 	background:#ff0099;	border:0px;	height :1px;	text-align:center;	width:90%;}
+
+select  {
+	background :#ffddff;
+	border : 0px;
+	color :hotpink;
+	font-family : verdana;
+	font-size : 11px;
+}
+
+input {background: #ffffff;
+	border:1px solid #ff0099; 
+	color :purple;
+	font-family : verdana;
+	font-size : 11px;}
+
+button {cursor:crosshair;
+        background: #ffffff;
+	border-top: 1px solid #ffccff;
+	border-left: 1px solid #ffccff;
+	border-right : 1px solid hotpink;
+	border-bottom : 1px solid hotpink;
+	color :hotpink;
+	font-family : verdana;
+	font-size : 11px;}
+
+textarea  {font-family : verdana;
+	font-size : 11px;
+	color :purple;
+	background :#ffddff;
+	border:hotpink 3px double;}
+
+fieldset {border:1px hotpink solid;}
+
+img {border:0px;}
+
+a {cursor:crosshair;
+   color:#ff66cc;
+   text-decoration:none;}
+a:link {color:#ff00cc;}
+a:hover {background:#ff66cc; color:#fff0ff; text-indent:0px;}
+a:active  {text-decoration : line-through;}

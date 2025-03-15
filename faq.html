@@ -1,0 +1,46 @@
+<script language="JavaScript" type="text/javascript" src="cabeca.html"></script>
+<script language="JavaScript" type="text/javascript" src="topo.html"></script>
+<script language="JavaScript" type="text/javascript" src="menu.html"></script>
+<script language="JavaScript" type="text/javascript" src="parceiros.html"></script>
+
+<script TYPE="TEXT/JAVASCRIPT" language="JavaScript">
+function toogleMenu(currMenu) {
+if (document.getElementById) {
+thisMenu = document.getElementById(currMenu).style
+if (thisMenu.display == "block") {
+thisMenu.display= "none"
+}
+else {
+thisMenu.display = "block"
+}
+return false
+}
+else {
+return true
+}
+}
+</script>
+
+<h2>Questões Freqüentemente Perguntadas</h2>
+</center>
+
+<ol type=1>
+<li><a onClick="return toogleMenu('como');">Como você aprendeu a fazer sites?</a>
+<span class="menu" id="como">
+<p>O segredo é o livro <b>Desenvolvendo sites profissionais com HTML 4.0 e CSS 2 - Manual Completo</b> do <a href=http://www.alancarvalho.com.br target=alan>Alan Carvalho</a>. Eu já fazia sites com o assistente de criação do <a href=http://www.hpg.com.br target=hpg>HPG</a>, que naquela época era bom, quando resolvi procurar na <a href=http://www.bc.ufg.br target=bd title='Biblioteca Central'>biblioteca</a> da <a href=http://www.ufg.br target=ufg target='Universidade Federal de Goiás'>UFG</a> algum livro sobre <b>HTML</b>. Achei esta maravilhosa obra e aprendi rapidinho!!! Mas eu não parei aí. Estou sempre procurando aprender mais. Muita coisa eu aprendo em sites específicos e "pegando" o código fonte dos sites alheios.</p>
+</span>
+<li><a onClick="return toogleMenu('qual');">Quais programas e quais linguagens você utiliza para criar seus sites?</a>
+<span class="menu" id="qual">
+<p>Uso o <b>Bloco de notas</b> e dois navegadores: <b>Internet Explorer</b> e <b>Firefox</b>. Crio meus sites com HTML, CSS e JavaScript.</p>
+</span>
+</ol>
+
+</td>
+</tr>
+
+<td colspan="2">
+<script language="Javascript" type="text/javascript" src="base.html"></script>
+</table>
+
+</body>
+

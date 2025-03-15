@@ -1,0 +1,85 @@
+<head>
+<meta http-equiv="Page-Enter" content="revealTrans(Duration=1.0,Transition=23)">
+<meta http-equiv="Page-Exit" content="revealTrans(Duration=1.0,Transition=23)">
+
+<link type=text/css href=estilo.css rel=stylesheet>
+
+<script language="JavaScript1.2">
+
+/*www.helen.ezdir.net*/
+
+var clickmessage="Muito obrigado por ter entrado em meu site, volte sempre!!!"
+
+function disableclick(e) {
+if (document.all) {
+if (event.button==2||event.button==3) {
+if (event.srcElement.tagName=="IMG"){
+alert(clickmessage);
+return false;
+}
+}
+}
+else if (document.layers) {
+if (e.which == 3) {
+alert(clickmessage);
+return false;
+}
+}
+else if (document.getElementById){
+if (e.which==3&&e.target.tagName=="IMG"){
+alert(clickmessage)
+return false
+}
+}
+}
+
+function associateimages(){
+for(i=0;i<document.images.length;i++)
+document.images[i].onmousedown=disableclick;
+}
+
+if (document.all)
+document.onmousedown=disableclick
+else if (document.getElementById)
+document.onmouseup=disableclick
+else if (document.layers)
+associateimages()
+</script>
+
+</head>
+
+<body>
+
+<h2>Awards que ganhei</h2>
+
+<p>Se você quiser me premiar envie o código por e-mail ou mande-me uma mensagem me autorizando a pegar o código onde ele esteja.</p>
+<center>
+
+<a href="http://www.luminescente.kit.net" target=blank><img src="http://www.luminescente.kit.net/awardpadrao.gif" border="0"></a>
+<BR><BR>
+<a target=blank title=Clique! href=http://www.sweetmary.net><img src=Awards0/award_sweetmary.gif border=0></a>
+<BR><BR>
+<a target=blank title=Clique! href=http://www.adoteumtifofi.hpg.com.br><img src=Awards0/award_adote.gif alt=www.adoteumtifofi.hpg.com.br border=0></a>
+<BR><BR>
+<a target=blank title=Clique! href=http://www.priquinha.cjb.net><img src=Awards0/award_pri.gif alt=www.priquinha.cjb.net border=0></a>
+<br><BR>
+<a href="http://certascoisas.weblogger.com.br" target=blank>
+<img src="http://www.irisgirl.kit.net/meuaward/award4.gif" border="0" width="180" height="116"></a>
+<br><BR>
+<a href="http://www.marciafriend.hpg.com.br" target=blank><img src="http://www.helenfam.kit.net/award_marcia.gif" border=0></a>
+<br><BR>
+<a href="http://www.arquivo74.blogger.com.br" target=blank><img src="http://www.helenfam.kit.net/award_arquivo74.gif" border=0></a>
+<br><BR>
+<a href="http://www.tifofisite.hpg.com.br" target=blank>
+<img src="http://helenfam.kit.net/award_luli.gif" border=0></a>
+<br><BR>
+<a href="http://priquinha.cjb.net" target=blank>
+<img src="http://helenfam.kit.net/award_pri.gif" border=0></a>
+<br><BR>
+<a href="http://www.angelicalgirl.blogger.com.br" target=blank><img src="http://www.helenfam.kit.net/awardangels.gif" border=0></a>
+<br><BR>
+<center><a href="http://www.presentinhos.blogger.com.br" target=_blank><img src="http://www.presentinhos.blogger.com.br/incpre.gif" border=0 alt="Visite Presentinhos"></a></center>
+
+
+</body>
+</html>

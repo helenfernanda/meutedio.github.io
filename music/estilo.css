@@ -1,0 +1,8 @@
+/* CSS Document */
+body {font-family:trebuchet ms; background:#333; color:#ccc; border:0px; margin:0px; padding:10px; font-size:13px;}
+a, a:link {color:#CCf;}
+a:link {text-decoration:underline;}
+a:hover {color:#FC0;}
+a {text-decoration:none;}
+#code {padding:10px; text-align:center; font-family:"Courier New", Courier, monospace;}
+hr {color:#C9C; background:#c9c; height:1px; border:0px;}

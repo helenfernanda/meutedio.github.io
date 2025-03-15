@@ -1,0 +1,416 @@
+<head>
+<meta http-equiv="Page-Enter" content="revealTrans(Duration=1.0,Transition=23)">
+<meta http-equiv="Page-Exit" content="revealTrans(Duration=1.0,Transition=23)">
+<meta http-equiv=Pragma content=no-cache>
+<link type=text/css rel=stylesheet href=estilo.css>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--  
+function snapIn(jumpSpaces,position) {                
+
+	var msg = "^_^ Helen Fernanda ^_^"        
+	var out = " "      
+        if (killScroll) {return false}        
+for (var i=0; i<position; i++){
+
+
+		out += msg.charAt(i)}        
+	for (i=1;i<jumpSpaces;i++) {
+		out += " "}        
+	out += msg.charAt(position)        
+	window.status = out        
+	if (jumpSpaces <= 1) {        
+		position++        
+	if (msg.charAt(position) == ' ') {
+		position++ }
+	        jumpSpaces = 100-position        
+
+
+
+
+
+	} 
+
+
+
+
+
+	else if (jumpSpaces >  3) {
+
+
+
+
+
+		jumpSpaces *= .75}        
+
+
+
+
+
+	else {
+
+
+
+
+
+		jumpSpaces--}        
+
+
+
+
+
+	if (position != msg.length) {        
+
+
+
+
+
+		var cmd = "snapIn(" + jumpSpaces + "," + position + ")";        
+
+
+
+
+
+		scrollID = window.setTimeout(cmd,5);        
+
+
+
+
+
+	} 
+
+
+
+
+
+	else {        
+
+
+
+
+
+		scrolling = false
+
+
+
+
+
+        	return false         
+
+
+
+
+
+	}        
+
+
+
+
+
+	return true
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+function snapSetup() {        
+
+
+
+
+
+	if (scrolling)           
+
+
+
+
+
+	if (!confirm('Re-initialize snapIn?'))        
+
+
+
+
+
+	return false   
+
+
+
+
+
+	killScroll = true  
+
+
+
+
+
+        scrolling = true   
+
+
+
+
+
+	var killID = window.setTimeout('killScroll=false',6)        
+
+
+
+
+
+	scrollID = window.setTimeout('snapIn(100,0)',10)        
+
+
+
+
+
+	return true    
+
+
+
+
+
+}
+
+
+
+
+
+//-------------------------------------------------------------
+
+        var scrollID = Object
+        var scrolling = false        
+	var killScroll = false
+
+
+//-------------------------------------------------------------
+
+// -->
+
+
+
+
+
+</SCRIPT>
+</head>
+<body onLoad="snapSetup()">
+
+<center>
+<h2>Texto na barra de status 3</h2>
+<p>Onde está escrito <b>^_^ Helen Fernanda ^_^</b> você escreve o texto que desejar.
+
+<p>Este código vem entre as tags < h e a d > e < / h e a d >:</p>
+
+<textarea>
+<SCRIPT LANGUAGE="JavaScript">
+<!--  
+function snapIn(jumpSpaces,position) {                
+
+	var msg = "^_^ Helen Fernanda ^_^"        
+	var out = " "      
+        if (killScroll) {return false}        
+for (var i=0; i<position; i++){
+
+
+		out += msg.charAt(i)}        
+	for (i=1;i<jumpSpaces;i++) {
+		out += " "}        
+	out += msg.charAt(position)        
+	window.status = out        
+	if (jumpSpaces <= 1) {        
+		position++        
+	if (msg.charAt(position) == ' ') {
+		position++ }
+	        jumpSpaces = 100-position        
+
+
+
+
+
+	} 
+
+
+
+
+
+	else if (jumpSpaces >  3) {
+
+
+
+
+
+		jumpSpaces *= .75}        
+
+
+
+
+
+	else {
+
+
+
+
+
+		jumpSpaces--}        
+
+
+
+
+
+	if (position != msg.length) {        
+
+
+
+
+
+		var cmd = "snapIn(" + jumpSpaces + "," + position + ")";        
+
+
+
+
+
+		scrollID = window.setTimeout(cmd,5);        
+
+
+
+
+
+	} 
+
+
+
+
+
+	else {        
+
+
+
+
+
+		scrolling = false
+
+
+
+
+
+        	return false         
+
+
+
+
+
+	}        
+
+
+
+
+
+	return true
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+function snapSetup() {        
+
+
+
+
+
+	if (scrolling)           
+
+
+
+
+
+	if (!confirm('Re-initialize snapIn?'))        
+
+
+
+
+
+	return false   
+
+
+
+
+
+	killScroll = true  
+
+
+
+
+
+        scrolling = true   
+
+
+
+
+
+	var killID = window.setTimeout('killScroll=false',6)        
+
+
+
+
+
+	scrollID = window.setTimeout('snapIn(100,0)',10)        
+
+
+
+
+
+	return true    
+
+
+
+
+
+}
+
+
+
+
+
+//-------------------------------------------------------------
+
+        var scrollID = Object
+        var scrolling = false        
+	var killScroll = false
+
+
+//-------------------------------------------------------------
+
+// -->
+
+
+
+
+
+</SCRIPT>
+</textarea>
+
+<p>Este código vem dentro da tag < b o d y >:</p>
+
+<textarea><body onLoad="snapSetup()"></textarea>
+

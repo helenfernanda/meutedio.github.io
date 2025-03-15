@@ -1,0 +1,32 @@
+@import url(rosa.css);
+@import url(branco.css);
+body {background:#00ff00;
+	 scrollbar-track-color:#00ff00;
+	 scrollbar-3dlight-color:#00ff00;
+	 scrollbar-highlight-color:#00ff00;
+	 scrollbar-shadow-color:#00ff00;
+	 scrollbar-darkshadow-color:#00ff00;
+	 scrollbar-arrow-color:#00ff00;}
+	 
+#back {background:#00ff00 url(bg_limao.gif) right top repeat-y;}	 
+
+td, p {color:#00ff00;}
+a {color:#ffcc00;}
+a:link {color:#00ccff;}
+a:hover {background:#00ff00; color:black;}
+
+button {border-color: #00ff00;
+	border-right-color: #006600;
+	border-bottom-color: #006600;
+	color:#00ff00;}
+h1, h2, h3, h4, h5, #titulo {color:#00cc00;}
+input {border-color:#00ff00; color:#00ff00;}
+hr {color:rgb(0,166,0); background:rgb(0,166,0);}
+ul {list-style-image:url(lista_verde.jpg);}
+
+textarea  {color:lime;
+	background :#000000;
+	border-color:lime;}
+
+.autor, #autor, #menorhot, #quote {color:#00cc00;}
+#caixa {border-color:#eeffee;}

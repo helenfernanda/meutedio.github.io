@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<!--  Created with the CoffeeCup HTML Editor  -->
+<!--        http://www.coffeecup.com/         -->
+<head>
+<meta http-equiv="Page-Enter" content="revealTrans(Duration=1.0,Transition=23)">
+<meta http-equiv="Page-Exit" content="revealTrans(Duration=1.0,Transition=23)">
+<meta http-equiv=Pragma content=no-cache>
+
+  <title>Net Mania - cursores</title>
+  <link type=text/css rel=stylesheet href=estilo.css>
+</head>
+<body>
+<h2>Cursores</h2>
+
+<p>Com CSS você pode definir a aparência do cursor do mouse. Passe o cursor sobre cada parágrafo abaixo para ver o efeito.<p>
+
+<ol>
+<li style='cursor:wait;'><b>style="cursor:wait;"</b>. <b>Wait</b> faz com que o cursor assuma a aparência de espera, no Windows Padrão é uma ampulheta.<BR><br></li>
+<li style='cursor:crosshair;'><b>style="cursor:crosshair;"</b>. Com <b>crosshair</b> geralmente aparece uma pequena cruz.<BR><br></li>
+<li style='cursor:hand;'><b>style="cursor:hand;"</b>. Com <b>hand</b> o cursor assume a aparência de qüando aponta um link, geralmente é a "mãozinha".<BR><br></li>
+<li style='cursor:help;'><b>style="cursor:help;"</b>. <b>Help</b> geralmente é a setinha com um interrogação, usado para <b>ajuda</b>.<BR><br></li>
+<li style='cursor:move;'><B>style="cursor:move;"</b>. Com <B>move</b> o cursor parece indicar que algo pode ser movido.<BR><br></li>
+<li style='cursor:default;'><b>style="cursor:default;"</b>. Mesmo isto sendo texto, <b>default</b> fez com que aparecesse o cursor padrão, que geralmente é a "setinha".<BR><br></li>
+<li><a href=# style='cursor:text;'><b>style="cursor:text;"</b>. Isto é um link, mas <b>text</b> fez aparecer o cursor de texto.</a><BR><br></li>
+<li style='cursor:e-resize;'><b>style="cursor:e-resize;"</b>. O cursor está apontado para o leste.<BR><br></li>
+<li style='cursor:w-resize;'><b>style="cursor:w-resize;"</b>. O cursor está apontado para o oeste.<BR><br></li>
+<li style='cursor:n-resize;'><b>style="cursor:n-resize;"</b>. O cursor está apontado para o norte.<BR><br></li>
+<li style='cursor:s-resize;'><b>style="cursor:e-resize;"</b>. O cursor está apontado para o sul.<BR><br></li>
+<li style='cursor:ne-resize;'><b>style="cursor:ne-resize;"</b>. O cursor está apontado para o nordeste.<BR><br></li>
+<li href=# style='cursor:sw-resize;'><b>style="cursor:sw-resize;"</b>. O cursor está apontado para o sudoeste.<BR><br></li>
+<li style='cursor:nw-resize;'><b>style="cursor:nw-resize;"</b>. O cursor está apontado para o noroeste.<BR><br></li>
+<li style='cursor:se-resize;'><b>style="cursor:se-resize;"</b>. O cursor está apontado para o sudeste.<BR><br></li>
+<li style="cursor:auto;"><b>style="cursor:auto;"</b>. Com <b>auto</b> tudo volta ao normal.<BR><br></li>
+<li style="cursor:'url(Cursores/10.cur)';"><B>style="cursor:'url(cursor.cur)';"</b>. Assim você escolhe um cursor arquivado, neste caso é uma aranha.<BR><br></li>
+</ol>
+
+<p> Para que o efeito aconteça basta colocar o efeito desejado dentro da tag que você deseja modificar, como nos exemplos:</p>
+<center>
+<textarea><font style='cursor:help;'>fonte</font></textarea>
+<textarea><p style='cursor:wait;'>parágrafo</p></textarea><BR>
+<textarea><a style='cursor:move;' href=#>link</a></textarea>
+<textarea><body style='cursor:crosshair;'>corpo da página</body></textarea>
+</center>
+
+<p>Se você utiliza folha de estilos, pode definir nela as modificações do cursor:</p>
+
+<center>
+<textarea>
+<head>
+<style>
+body {cursor:crosshair;}
+a {cursor:help;}
+p {cursor:move;}
+</style>
+</head>
+</textarea>
+</center>
+
+</body>
+</html>

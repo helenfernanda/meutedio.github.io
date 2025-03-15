@@ -1,0 +1,103 @@
+<html>
+<head>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Page-Enter" content="revealTrans(Duration=1.0,Transition=23)">
+<meta http-equiv="Page-Exit" content="revealTrans(Duration=1.0,Transition=23)">
+<meta http-equiv=Pragma content=no-cache>
+
+  <title>Net Mania</title>
+  <link type=text/css rel=stylesheet href=estilo.css>
+
+</head>
+<body>
+<h2>Links</h2>
+
+<p>Em CSS as classes que modificam os links são:</p>
+
+<dl>
+<dt>a
+<dd>serve para todo o texto da página que utilize a tag <B>a</b>, mesmo que não seje um link.
+
+<dt>a:link
+<DD>afeta os links antes de clicados.
+
+<dt>a:hover
+<dd>afeta o link no momento em que o mouse passa sobre ele. Se você usar a classe <b>a:visited</b> a classe <B>a:hover</b> não terá efeito sobre links já visitados.
+
+<dt>a:active
+<DD>afeta o link no momento em que é clicado.
+
+<dt>a:visited
+<dd>afeta os links que já foram visitados.
+</dl>
+
+<p>Todas as propriedades de texto podem ser usadas para modificar o link. Eis alguns exemplos que você pode experimentar. Observe as cores, os efeitos no texto e os cursores:</p>
+
+<center>
+
+<textarea>
+<head>
+<style>
+a {color:lightgreen; text-decoration:none; cursor:move;}
+a:link {color:green;}
+a:hover {text-decoration:underline overline;}
+a:active {text-decoration:line-through;}
+</style></head></textarea>
+
+<textarea>
+<head>
+<style>
+body {background:lightyellow;}
+a {color:orange; text-decoration:none; cursor:default;}
+a:link {color:darkorange;}
+a:hover {color:lightyellow; background:darkorange;}
+a:active {text-decoration:overline underline line-through;}
+</style></head></textarea>
+
+<BR>
+
+<textarea>
+<head>
+<style>
+body {background:white;}
+a {color:green; text-decoration:none; cursor:crosshair;}
+a:link {color:darkgreen;}
+a:hover {text-transform:uppercase;}
+a:active {text-transform:none; text-decoration:line-through;}
+</style></head></textarea>
+
+<textarea>
+<head>
+<style>
+body {background:white;}
+a {color:red; text-decoration:none; cursor:help;}
+a:link {color:darkred;}
+a:hover {text-weight:bold;}
+a:active {text-transform:none; text-decoration:line-through;}
+</style></head></textarea>
+
+<BR>
+
+<textarea>
+<head>
+<style>
+body {background:white;}
+a {color:red; text-decoration:none; cursor:wait;}
+a:link {color:darkred;}
+a:hover {filter: shadow(Color=orange, strength=5); height:0;}
+a:active {text-transform:none; text-decoration:line-through;}
+</style></head></textarea>
+
+<textarea>
+<head>
+<style>
+body {background:white;}
+a {color:red; text-decoration:none; cursor:crosshair;}
+a:link {color:darkred;}
+a:hover {filter: glow(Color=orange, strength=5); height:0;}
+a:active {text-transform:none; text-decoration:line-through;}
+</style></head></textarea>
+</table>
+
+</body>
+</html>

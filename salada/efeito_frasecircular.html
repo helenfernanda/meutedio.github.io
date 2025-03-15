@@ -1,0 +1,45 @@
+<body>
+<SCRIPT LANGUAGE="JavaScript">
+if (document.all) {
+yourLogo = "* www.helenfernanda.kit.net ";
+logoFont = " verdana";
+logoColor = "green";
+yourLogo = yourLogo.split('');
+L = yourLogo.length;
+TrigSplit = 360 / L;
+Sz = new Array()
+logoWidth = 70;
+logoHeight = -30;
+ypos = 0;
+xpos = 0;
+step = 0.04;
+currStep = 0;
+document.write('<div id="outer" style="position:absolute;top:0px;left:0px "><div style="position:relative">');
+for (i = 0; i < L; i++) {
+document.write('<div id="ie" style="position:absolute;top:0px;left:0px ;'
++'width:10px;height:10px;font-family: '+logoFont+'; font-size:12px;'
++'color:'+logoColor+'; text-align:cent er">'+yourLogo[i]+'</div>');
+}
+document.write('</div></div>');
+function Mouse() {
+ypos = event.y;
+xpos = event.x - 3;
+}
+document.onmousemove=Mouse;
+function animateLogo() {
+outer.style.pixelTop = document.body.scrollTop;
+for (i = 0; i < L; i++) {
+ie[i].style.top = ypos + logoHeight * Math.sin(currStep + i * TrigSplit * Math.PI / 180);
+ie[i].style.left = xpos + logoWidth * Math.cos(currStep + i * TrigSplit * Math.PI / 180);
+Sz[i] = ie[i].style.pixelTop - ypos;
+if (Sz[i] < 5) Sz[i] = 3;
+ie[i].style.fontSize = Sz[i] / 1.7;
+}
+currStep -= step;
+setTimeout('animateLogo()', 10);
+}
+window.onload = animateLogo;
+}
+// End -->
+</SCRIPT>
+</body>

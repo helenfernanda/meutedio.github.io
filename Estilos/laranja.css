@@ -1,0 +1,37 @@
+@import url(estilo.css);
+body {background:#ff6600 url(fundo_laranja.gif);
+	 scrollbar-track-color:#ff6600;
+ 	 scrollbar-face-color:#ffffff;
+	 scrollbar-3dlight-color:#ff6600;
+	 scrollbar-highlight-color:#ff6600;
+	 scrollbar-shadow-color:#ff6600;
+	 scrollbar-darkshadow-color:#ff6600;
+	 scrollbar-arrow-color:#ff6600;}
+
+h1, h2, h3, h4, h5, #titulo {color:#ee6600;}	 
+td, p {background:#ffffff; color:#753a00;}
+
+a {color:#b164ff;}
+a:link {color:#428dff;}
+a:hover {background:#ff6600; color:#ffffff;}
+
+button {background: #ffcc00;
+	border:0px;
+	color:#006600;}
+input {border:0px; background:#ffffff; color:#996600; border:1px solid #ff6600;}
+hr {color:#ff9600; background:#ff6600;}
+ul {list-style-image:url(lista_laranja.jpg);}
+
+textarea  {color:#996600;
+	background :#ffffff;
+	border:1px solid #ff6600;}
+	 
+#back {background-image:url(bg_laranja.gif);}
+.autor, #autor, #menorhot {color:#ee6600;}
+#carac {border-color:#ff6600;}
+#carac th {background:#ff6600; color:#ffffff;}
+#carac td {border-color:#ff6600;}	
+#caixa {border-color:#ee6600;}
+#quote {color:#ee6600;}
+#secoes a:hover {background:#ff6600 url(fundo_laranja_link.gif) right bottom; font-weight:bold;}
+#recomende {border-color:#ffcc66;}

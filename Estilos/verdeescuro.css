@@ -1,0 +1,39 @@
+@import url(estilo.css);
+body {background:#006611 url(fundo_verdeescuro.gif);
+	 scrollbar-track-color:#006611;
+	 scrollbar-3dlight-color:#006611;
+	 scrollbar-highlight-color:#006611;
+	 scrollbar-shadow-color:#006611;
+	 scrollbar-darkshadow-color:#006611;
+	 scrollbar-arrow-color:#006611;
+	 scrollbar-face-color:#ffffff;}
+	 
+body, table, td {color:#000000;}	 
+
+#back {background:#99ff99 url(bg_verdeescuro.gif) right top repeat-y;}
+#nome {background:url(nome_verde.gif);}
+#secoes a:hover {background:#006600 url(fundo_verdeescuro_link.gif); font-weight:bolder;}
+#recomende {border-color:#669966;}
+	 
+a {color:#999900;}
+a:link {color:#009999;}
+a:hover {background:#006600; color:white;}
+
+button {background: #ffffff;
+	border-color: lime;
+	border-right-color : darkgreen;
+	border-bottom-color: darkgreen;
+	color :darkgreen;}
+	
+h1, h2, h3, h4, h5, #titulo {color:#006600;}
+input {border-color:#006600; color:#000000;}
+hr {color:#009900; background:rgb(0,166,0);}
+ul {list-style-image:url(lista_verdeescuro.jpg);}
+
+textarea  {color:darkgreen;
+	background :#ffffff;
+	border:1px dotted #006611;}
+
+.autor, #autor, #menorhot {color:#009900;}
+#caixa {border-color:#009900;}
+#quote {color:#009900;}

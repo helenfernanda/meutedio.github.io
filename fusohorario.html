@@ -1,0 +1,942 @@
+<html>
+<head>
+
+<meta http-equiv="Page-Enter" content="revealTrans(Duration=1.0,Transition=23)">
+<meta http-equiv="Page-Exit" content="revealTrans(Duration=1.0,Transition=23)">
+<link type=text/css rel=stylesheet href=estilo.css>
+<head><meta http-equiv=refresh content=0;URL=http://www.helenfernanda.com /></head>
+<script type="text/javascript" language="JavaScript">window.location="http://www.helenfernanda.com"</script>
+</head>
+
+<body onLoad="SystemClock()">
+
+<h2>Fuso horário</h2>
+
+<p>Esta tabela só funciona se o horário de sua máquina estiver correto. Por algum motivo que eu não sei explicar ela não funciona no Internet Explorer 6.</p>
+
+<script language="JavaScript">
+
+<!--
+
+
+
+//variables
+
+var Separator=";"
+
+var Fields=6;
+
+
+
+var days=new Array()					//create array for days
+
+days[0]="Dom";
+
+days[1]="Seg";
+
+days[2]="Ter";
+
+days[3]="Qua";
+
+days[4]="Qui";
+
+days[5]="Sex";
+
+days[6]="Sab";
+
+
+
+var months=new Array()					//create array for months
+
+months[0]="Jan";
+
+months[1]="Fev";
+
+months[2]="Mar";
+
+months[3]="Abr";
+
+months[4]="Maio";
+
+months[5]="Jun";
+
+months[6]="Jul";
+
+months[7]="Ago";
+
+months[8]="Set";
+
+months[9]="Out";
+
+months[10]="Nov";
+
+months[11]="Dez";
+
+
+
+var wts=new Array() 					//create array for cities, states, offsets, hours, minutes
+
+wts[1]="Abidjan;Cote d'Ivoire;+;0;;"
+
+wts[2]="Abu Dhabi;United Arab Emirates;+;4;;"
+
+wts[3]="Adana;Turkey;+;2;;"
+
+wts[4]="Addis Ababa;Ethiopia;+;3;;"
+
+wts[5]="Adelaide *;South Australia - Australia;+;10;30;"
+
+wts[6]="Aden; South Yemen;+;3;;"
+
+wts[7]="Aklavik;Yukon - Canada;-;9;;"
+
+wts[8]="Aleutian;Aleutian Islands;-;10;;"
+
+wts[9]="Alexandria;Egypt;+;2;;"
+
+wts[10]="Algiers;Algeria;+;0;;"
+
+wts[11]="Altamira;Brasil;-;3;;"
+
+wts[12]="Amsterdam;Netherlands;+;1;;"
+
+wts[13]="Anadyr;Russia;+;13;;"
+
+wts[14]="Anápolis;Brasil;-;3;;"
+
+wts[15]="Anchorage;Alaska - USA;-;9;;"
+
+wts[16]="Ankara;Turkey;+;2;;"
+
+wts[17]="Antananarivo;Madagascar;+;3;;"
+
+wts[18]="Antwerp;Belgium;+;0;;"
+
+wts[19]="Aparecida de Goiânia;Brasil;-;3;;"
+
+wts[20]="Asuncion *;Paraguay;-;3;;"
+
+wts[21]="Athens;Greece;+;2;;"
+
+wts[22]="Atlanta;Georgia - USA;+;5;;"
+
+wts[23]="Auckland *;New Zealand;+;12;;"
+
+wts[24]="Aveiro;Portugal;+;0;;"
+
+wts[25]="Baghdad;Iraq;+;3;;"
+
+wts[26]="Bamako;Mali;+;0;;"
+
+wts[27]="Bandar Seri Begawan;Brunei;+;8;;"
+
+wts[28]="Bangkok;Thailand;+;7;;"
+
+wts[29]="Bangui;Central African Republic;+;1;;"
+
+wts[30]="Banjul;Gambia;+;1;;"
+
+wts[31]="Barcelona;Spain;+;1;;"
+
+wts[32]="Barranquilla;Colombia;-;5;;"
+
+wts[33]="Beijing;China;+;8;;"
+
+wts[34]="Beirut;Lebanon;+;2;;"
+
+wts[35]="Belém;Brasil;-;3;;"
+
+wts[36]="Belgrade;Serbia;+;1;;"
+
+wts[37]="Belize City;Belize;-;5;;"
+
+wts[38]="Berlin;Germany;+;1;;"
+
+wts[39]="Blantyre;Malawi;+;2;;"
+
+wts[40]="Bogota;Colombia;-;5;;"
+
+wts[41]="Bologna;Italy;+;2;;"
+
+wts[42]="Bombay (Mumbai);India;+;6;;"
+
+wts[43]="Brasília;Brasil;-;3;;"
+
+wts[44]="Bratislava;Slovak Republic;+;1;;"
+
+wts[45]="Brazzaville;Congo;+;0;;"
+
+wts[46]="Bridgetown;Barbados;-;4;;"
+
+wts[47]="Brisbane;Queensland - Australia;+;10;;"
+
+wts[48]="Brussels;Belgium;+;1;;"
+
+wts[49]="Bucharest;Romania;+;2;;"
+
+wts[50]="Budapest;Hungary;+;1;;"
+
+wts[51]="Buenos Aires;Argentina;-;3;;"
+
+wts[52]="Bujumbura;Burundi;+;2;;"
+
+wts[53]="Cairo;Italy;+;2;;"
+
+wts[54]="Calcutta;India;+;6;;"
+
+wts[55]="Calgary;Alberta - Canada;-;6;;"
+
+wts[56]="Cali;Colombia;+;0;;"
+
+wts[57]="Cape Town;South Africa;+;1;;"
+
+wts[58]="Caracas;Venezuela;-;4;;"
+
+wts[59]="Cebu;Philippines;+;8;;"
+
+wts[60]="Chicago;Illinois - USA;-;6;;"
+
+wts[61]="Christchurch;New Zealand;+;12;;"
+
+wts[62]="Colombo;Sri Lanka;+;5;30;"
+
+wts[63]="Conakry;Guinea;+;0;;"
+
+wts[63]="Copenhagen;Denmark;+;1;;"
+
+wts[64]="Cotonou;Benin;+;0;;"
+
+wts[65]="Dakar;Senegal;+;0;;"
+
+wts[66]="Dallas;USA;-;6;;"
+
+wts[67]="Darwin;Australia;+;10;;"
+
+wts[68]="Delhi;India;+;5;30;"
+
+wts[69]="Detroit;USA;-;5;;"
+
+wts[70]="Dhaka;Bangladesh;+;6;;"
+
+wts[71]="Djibouti;Djibouti;+;2;;"
+
+wts[72]="Dover;Delaware - USA;-;5;;"
+
+wts[73]="Dubai;United Arab Emirates;+;3;;"
+
+wts[74]="Dublin;Ireland;+;0;;"
+
+wts[75]="Dusseldorf;Germany;+;1;;"
+
+wts[76]="Edmonton;Alberta - USA;-;7;;"
+
+wts[77]="Fairbanks;Alaska;-;9;;"
+
+wts[78]="Florence;Italy;+;2;;"
+
+wts[79]="Fort de France;Martinique;-;4;;"
+
+wts[80]="Frankfurt;Germany;+;1;;"
+
+wts[81]="Freetown;Sierra Leone;+;0;;"
+
+wts[82]="Gaborone;Botswana;+;1;;"
+
+wts[83]="Geneva;Switzerland;+;1;;"
+
+wts[84]="Gibraltar;Spain;+;1;;"
+
+wts[85]="Glasgow;England;+;0;;"
+
+wts[86]="GMT;GMT;+;0;;"
+
+wts[87]="Goianésia;Brasil;-;3;;"
+
+wts[88]="Goiânia;Brasil;-;3;;"
+
+wts[89]="Guatemala City;Guatemala;-;6;;"
+
+wts[90]="Guayaquil;Ecuador;-;5;;"
+
+wts[91]="Hamilton;Bermuda;-;4;;"
+
+wts[92]="Harare;Zimbabwe;+;2;;"
+
+wts[93]="Havana;Cuba;-;5;;"
+
+wts[94]="Helsinki;Finland;+;2;;"
+
+wts[95]="Hobart;Tasmania - Australia;+;10;;"
+
+wts[96]="Hong Kong;Honk Kong;+;8;;"
+
+wts[97]="Honolulu;Hawaii;-;10;;"
+
+wts[98]="Indianapolis;Indiana - USA;-;5;;"
+
+wts[99]="Ipswich;Australia;+;10;;"
+
+wts[100]="Islamabad;Pakistan;+;5;;"
+
+wts[101]="Istanbul;Turkey;+;2;;"
+
+wts[102]="Jakarta;Indonesia;+;7;;"
+
+wts[103]="Jerusalem;Israel;+;2;;"
+
+wts[104]="Johannesburg;South Africa;+;2;;"
+
+wts[105]="Kabul;Afghanistan;+;5;;"
+
+wts[106]="Kaduna;Nigeria;+;0;;"
+
+wts[107]="Kahira;Egypt;+;2;;"
+
+wts[108]="Kamchatka;Russia;+;11;;"
+
+wts[109]="Kano;Nigeria;+;1;;"
+
+wts[110]="Karachi;Pakistan;+;5;;"
+
+wts[111]="Kathmandu;Nepal;+;6;;"
+
+wts[112]="Kiev;Ukraine;+;3;;"
+
+wts[113]="Kigali;Rwanda;+;1;;"
+
+wts[114]="Kingston;Jamaica;-;5;;"
+
+wts[115]="Kinshasa;Zaire;+;1;;"
+
+wts[116]="Kobe;Japan;+;9;;"
+
+wts[117]="Kuala Lumpur;Malaysia;+;8;;"
+
+wts[118]="Kuwait City;Kuwait;+;3;;"
+
+wts[119]="Kyoto;Japan;+;9;;"
+
+wts[120]="La Paz;Bolivia;-;5;;"
+
+wts[121]="Lagos;Nigeria;+;1;;"
+
+wts[122]="Libreville;Gabon;+;0;;"
+
+wts[123]="Lima;Peru;-;5;;"
+
+wts[124]="Limon;Costa Rica;-;5;;"
+
+wts[125]="Lisbon;Portugal;+;0;;"
+
+wts[126]="Lome;Togo;+;0;;"
+
+wts[127]="London;England - UK;+;0;;"
+
+wts[128]="Los Angeles;California - USA;-;8;;"
+
+wts[129]="Lubumbashi;Zaire;+;1;;"
+
+wts[130]="Luxembourg;Luxembourg;+;1;;"
+
+wts[131]="Madrid;Spain;+;1;;"
+
+wts[132]="Manama;Bahrain;+;3;;"
+
+wts[133]="Manila;Philippines;+;8;;"
+
+wts[134]="Maracaibo;Venezuela;-;5;;"
+
+wts[135]="Maseru;Lesotho;+;2;;"
+
+wts[136]="Mayaguez;Puerto Rico;-;4;;"
+
+wts[137]="Mbabane;Swaziland;+;2;;"
+
+wts[138]="Medan;Indonesia;+;8;;"
+
+wts[139]="Medellin;Colombia;-;5;;"
+
+wts[140]="Melbourne *;Victoria - Australia;+;10;;"
+
+wts[141]="Mexico City;Mexico;-;6;;"
+
+wts[142]="Milan;Italy;+;1;;"
+
+wts[143]="Mogadishu;Somalia;+;3;;"
+
+wts[144]="Mombasa;Kenya;+;3;;"
+
+wts[145]="Monrovia;Liberia;+;0;;"
+
+wts[146]="Monte Carlo;Monaco;+;1;;"
+
+wts[147]="Montevideo;Uruguay;-;3;;"
+
+wts[148]="Montreal;Quebec - Canada;-;5;;"
+
+wts[149]="Morgantown;West Virginia - USA;-;5;;"
+
+wts[150]="Moscow;Russia;+;3;;"
+
+wts[151]="Mumbai (Bombay);India;+;5;30;"
+
+wts[152]="Munich;Germany;+;1;;"
+
+wts[153]="Murmansk;Rusia;+;2;;"
+
+wts[154]="Muscat;Oman;+;3;;"
+
+wts[155]="N'Djamena;Chad;+;0;;"
+
+wts[156]="Nagasaki;Japan;+;9;;"
+
+wts[157]="Nagoya;Japan;+;9;;"
+
+wts[158]="Nairobi;Kenia;+;3;;"
+
+wts[159]="Naples;Italy;+;1;;"
+
+wts[160]="Nassau;Bahamas;-;5;;"
+
+wts[161]="New Hebrides;New Hebrides;+;11;;"
+
+wts[162]="New York City;New York - USA;-;5;;"
+
+wts[163]="Newfoundland;Newfoundland - Canada;-;3;;"
+
+wts[164]="Niamey;Niger;+;0;;"
+
+wts[165]="Nice;France;+;1;;"
+
+wts[166]="Nicosia;Cyprus;+;2;;"
+
+wts[167]="Nome;Alaska;-;9;;"
+
+wts[168]="Nottingham;England - UK;+;0;;"
+
+wts[169]="Nouakchott;Mauritania;+;0;;"
+
+wts[170]="Nuk;Greenland;-;3;30;"
+
+wts[171]="Odessa;Ukraine;+;3;;"
+
+wts[172]="Oran;Algeria;+;0;;"
+
+wts[173]="Osaka;Japan;+;9;;"
+
+wts[174]="Oslo;Norway;+;1;;"
+
+wts[175]="Ottawa;Ontario - Canada;-;5;;"
+
+wts[176]="Ouagadougou;Burkina Faso;+;0;;"
+
+wts[177]="Oulu;Finland;+;2;;"
+
+wts[178]="Oxford;England - UK;+;0;;"
+
+wts[179]="Palma;Mallorca;+;1;;"
+
+wts[180]="Panjim;Goa - India;+;5;30;"
+
+wts[181]="Paramaribo;Suriname;-;4;;"
+
+wts[182]="Paris;France;+;1;;"
+
+wts[183]="Peking;China;+;8;;"
+
+wts[184]="Perth;Western Australia - Australia;+;8;;"
+
+wts[185]="Phoenix;Arizona - USA;-;7;;"
+
+wts[186]="Ponce;Puerto Rico;-;4;;"
+
+wts[187]="Port Louis;Mauritius;+;4;;"
+
+wts[188]="Port Moresby;Papua New Guinea;+;10;;"
+
+wts[189]="Port of Spain;Trinidad and Tobago;-;4;;"
+
+wts[190]="Prague;Czech Republic;+;1;;"
+
+wts[191]="Praia;Cape Verde;-;2;;"
+
+wts[192]="Puntarenas;Costa Rica;-;5;;"
+
+wts[193]="Quebec;Canadá;-;5;;"
+
+wts[194]="Quito;Ecuador;-;5;;"
+
+wts[195]="Rangoon;Barma;+;7;;"
+
+wts[196]="Reykjavik;Iceland;-;1;;"
+
+wts[197]="Riga;Latvia;+;4;;"
+
+wts[198]="Rio de Janeiro;Brasil;-;3;;"
+
+wts[199]="Riyadh;Saudi Arabia;+;3;;"
+
+wts[200]="Rome;Italy;+;1;;"
+
+wts[201]="Saigon;Vietnam;+;7;;"
+
+wts[202]="Saint Petersburg (Leningrad);Russia;+;3;;"
+
+wts[203]="Salt Lake City;USA;-;7;;"
+
+wts[204]="Salzburg;Austria;+;1;;"
+
+wts[205]="San Francisco;California - USA;-;8;;"
+
+wts[206]="San Jose;Costa Rica;-;6;;"
+
+wts[207]="San Juan;Puerto Rico;-;4;;"
+
+wts[208]="Santa Cruz de Tenerife;Canarias Islands;+;0;;"
+
+wts[209]="Santiago *;Chile;-;3;;"
+
+wts[210]="Santo Domingo;Dominican Republic;-;4;;"
+
+wts[211]="São Paulo;Brasil;-;3;;"
+
+wts[212]="Sapporo;Japan;+;9;;"
+
+wts[213]="Sarajevo;Bosnia;+;1;;"
+
+wts[214]="Seattle;Washington - USA;-;8;;"
+
+wts[215]="Seoul;South Korea;+;9;;"
+
+wts[216]="Shanghai;China;+;8;;"
+
+wts[217]="Singapore;Singapore;+;8;;"
+
+wts[218]="Sofia;Bulgary;+;2;;"
+
+wts[219]="Stockholm;Sweden;+;1;;"
+
+wts[220]="Stuttgart;Germany;+;1;;"
+
+wts[221]="Surabaya;Indonesia;+;7;;"
+
+wts[222]="Suva;Fiji Islands;+;12;;"
+
+wts[223]="Sydney *;Australia;+;11;;"
+
+wts[224]="Taipei;Thaiwan;+;8;;"
+
+wts[225]="Tallinn;Estonia;+;2;;"
+
+wts[226]="Tampere;Finland;+;2;;"
+
+wts[227]="Tashkent;Uzbekistan;+;3;;"
+
+wts[228]="Tegucigalpa;Honduras;-;5;;"
+
+wts[229]="Tehran;Iran;+;4;;"
+
+wts[230]="Tel Aviv;Israel;+;2;;"
+
+wts[231]="Tokyo;Japan;+;9;;"
+
+wts[232]="Toronto;Canada;-;5;;"
+
+wts[233]="Tripoli;Libya;+;1;;"
+
+wts[234]="Tunis;Tunisia;+;1;;"
+
+wts[235]="Turin;Italy;+;1;;"
+
+wts[236]="Ulanbatar;Mongolia;+;8;;"
+
+wts[237]="Valletta;Malta;+;1;;"
+
+wts[238]="Vancouver;Canada;-;8;;"
+
+wts[239]="Venice;Italy;+;1;;"
+
+wts[240]="Victoria Falls;Zimbabwe;+;2;;"
+
+wts[241]="Vienna;Austria;+;1;;"
+
+wts[242]="Vientiane;Laos;+;7;;"
+
+wts[243]="Vladimir;Russia;+;3;;"
+
+wts[244]="Vladivostok;Russia;+;10;;"
+
+wts[245]="Warsaw;Poland;+;1;;"
+
+wts[246]="Washington DC;Washington - USA;-;5;;"
+
+wts[247]="Wellington *;New Zealand;+;12;;"
+
+wts[248]="Winnipeg;Canada;-;6;;"
+
+wts[249]="Yalta;Ukraine;+;3;;"
+
+wts[250]="Zagreb;Croatia;+;1;;"
+
+wts[251]="Zaragoza;Spain;+;1;;"
+
+wts[252]="Zurich;Switzerland;+;1;;"
+
+//* means that the shown time has been adjusted due to local daylight saving. Local daylight
+
+//  saving time/summer time is unwarranted!
+
+
+
+var ST=null;
+
+var constanta=3600000;
+
+var GMTClockID=null;
+
+var GMTClockRunning=false;
+
+var TSCClockID=null;
+
+var TSCClockRunning=false;
+
+var GMT="";
+
+function SystemClock(){							//simple clock for current system time
+
+  var time=new Date()
+
+  var x=time
+
+  var y=x.getDate();    (y<10) ? y="0"+y : y
+
+  var z=x.getYear();    (z>70 && z<=99) ? z="19"+z : z=" "+z
+
+  var hs=x.getHours();  (hs<10) ? hs="0"+hs : hs
+
+  var ms=x.getMinutes();(ms<10) ? ms="0"+ms : ms
+
+  var ss=x.getSeconds();(ss<10) ? ss="0"+ss : ss
+
+  ST=days[x.getDay()]+", "+y+" "+months[x.getMonth()]+" "+z+" "+hs+":"+ms+":"+ss;
+
+  document.clockForm.digits.value=ST+" "+"YST";
+
+  id=setTimeout("SystemClock()",1000)			//displays system time
+
+}
+
+
+
+function GMTClock(){							//displays selected different time
+
+  var a1=new Date()
+
+  var a2=a2=a1.toLocaleString();
+
+  a2=Date.parse(a2);
+
+  if(offset=="+"){
+
+    var a3=new Date(a2-addhm);
+
+  }
+
+  else{var a3=new Date(a2+addhm);
+
+  }
+
+  var bx=""+a3;
+
+  var sn=bx.length;
+
+  var bden=bx.substring(0,3);
+
+  var bdd=bx.substring(8,10);
+
+  var bm=bx.substring(4,7);
+
+  var br=bx.substring(sn-4,sn);
+
+  var bc=bx.substring(11,19);
+
+  GMT=bden+", "+bdd+" "+bm+" "+br+" "+bc;
+
+  document.clockForm.digits1.value=GMT+" "+"GMT";			//displays selected time minus your time zone offset from OS
+
+  stopGMTClock(); GMTClockID=setTimeout("GMTClock()",1000); GMTClockRunning=true;
+
+}
+
+
+
+function where1(si){							//read option selected
+
+  if(si != 0){
+
+    offset=GetField(wts[si],3);					//realy offset to GMT from array wts
+
+	addh=GetField(wts[si],4);
+
+    if(GetField(wts[si],5) != ""){				//if find minutes in array wts converts minutes to milisecs
+
+	  addm=(GetField(wts[si],5)/60);
+
+	}
+
+	else{addm=0;
+
+	}
+
+    addhm=(constanta*addh)+(constanta*addm);
+
+	stopTSCClock(); document.clockForm.digits2.value=""; GMTClock();
+
+  }
+
+  else{
+
+    stopGMTClock();	document.clockForm.digits1.value="";
+
+	stopTSCClock(); document.clockForm.digits2.value="";
+
+  }
+
+}
+
+
+
+function TSCClock(){							//displays selected different time
+
+  var a11=new Date(GMT)
+
+  var a22=a11.toLocaleString();
+
+  a22=Date.parse(a22);
+
+  if(offset1=="+"){
+
+    var a33=new Date(a22+addhm1)
+
+  }
+
+  else{var a33=new Date(a22-addhm1)
+
+  }
+
+  var bx1=""+a33;
+
+  var sn1=bx1.length;
+
+  var bden1=bx1.substring(0,3);
+
+  var bdd1=bx1.substring(8,10);
+
+  var bm1=bx1.substring(4,7);
+
+  var br1=bx1.substring(sn1-4,sn1);
+
+  var bc1=bx1.substring(11,19);
+
+  document.clockForm.digits2.value=bden1+", "+bdd1+" "+bm1+" "+br1+" "+bc1+" TSC";	//displays selected time minus your time zone offset from OS
+
+  stopTSCClock(); TSCClockID=setTimeout("TSCClock()",1000); TSCClockRunning=true;
+
+}
+
+
+
+function where2(si){							//read option selected
+
+  if(si !=0 && GMT !=""){
+
+    offset1=GetField(wts[si],3);				//realy offset to GMT from array wts
+
+	addh1=GetField(wts[si],4);
+
+    if(GetField(wts[si],5) != ""){				//if find minutes in array wts converts minutes to milisecs
+
+	  addm1=(GetField(wts[si],5)/60);
+
+	}
+
+	else{addm1=0;
+
+	}
+
+    addhm1=(constanta*addh1)+(constanta*addm1);TSCClock();
+
+  }
+
+  else{
+
+    stopTSCClock();
+
+	document.clockForm.digits2.value="";
+
+	alert("Where are you from ???");
+
+	document.clockForm.c2.options[0].selected=true;
+
+	document.clockForm.c1.focus();
+
+  }
+
+}
+
+
+
+function stopGMTClock(){				//stops GMT time
+
+  if(GMTClockRunning) clearTimeout(GMTClockID);	GMTClockRunning=false;
+
+}
+
+
+
+function stopTSCClock(){				//stops Any time
+
+  if(TSCClockRunning) clearTimeout(TSCClockID);	TSCClockRunning=false;
+
+}
+
+
+
+function GetField(Entry,number){		//read fields from array wts
+
+  var Out="";
+
+  var FirstChar;
+
+  var LastChar;
+
+  FirstChar=0;
+
+  LastChar=Entry.indexOf(Separator);
+
+  if(number==1){
+
+    Out+=Entry.substring(FirstChar,LastChar);
+
+	return Out;
+
+  }
+
+  if(number==Fields){
+
+    Out+=Entry.substring(Entry.lastIndexOf(Separator)+1,Entry.length);
+
+	return Out;
+
+  }
+
+  for(var i=2;i<=number;i++){
+
+     FirstChar=LastChar+1;
+
+	 LastChar=Entry.indexOf(Separator, FirstChar);
+
+  }
+
+  Out+=Entry.substring(FirstChar,LastChar);
+
+  return Out;
+
+}
+
+
+
+function writecities(str,n){			//writes options from array wts
+
+  if(n=="c1"){document.writeln('<SELECT NAME="c1" onChange="where1(selectedIndex)">');}
+
+  if(n=="c2"){document.writeln('<SELECT NAME="c2" onChange="where2(selectedIndex)">');}
+
+  document.writeln("<OPTION VALUE='0'>"+str);
+
+  for(var s=1;s<wts.length;s++){
+
+    document.write("<OPTION VALUE='"+s+"'>"+GetField(wts[s],1)+" - "+GetField(wts[s],2));
+
+  }
+
+  document.writeln("</SELECT>");
+
+}
+
+//-->
+
+</script></font></p>
+
+<form name="clockForm">
+
+<table cellspacing="15">
+           <tr>
+            <td>Hora do seu computador: </td>
+            <td><input type="text" size="32" name="digits"></td>
+        </tr>
+
+        <tr>
+            <td align="center" colspan="2"><script language="JavaScript">
+
+<!--
+
+var str="Qual é o seu fuso horário?";
+
+var n="c1";
+
+writecities(str,n);
+
+document.clockForm.c1.focus();
+
+//-->
+
+</script></td>
+        </tr>
+        <tr>
+            <td>
+
+Hora de Greenwich:
+</td>
+            <td>
+<input type="text"
+            size="32" name="digits1"></font></td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2"><script language="JavaScript">
+
+<!--
+
+var str="Você quer saber a hora em qual cidade?";
+
+var n="c2";
+
+writecities(str,n);
+
+//-->
+
+</script> </font></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</font>Hora da cidade selecionada:</font></td>
+            <td><input type="text"
+            size="32" name="digits2"></font></td>
+        </tr>
+    </table>
+    </center></div>
+</form>
+<form>
+<div align="center">
+<center>
+<p>
+
+</form> 
+</font>
+</p>
+</center>
+</div>
+</form>
+
+</body>
+</html>
+

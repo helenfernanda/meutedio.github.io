@@ -1,0 +1,105 @@
+<head>
+<meta http-equiv="Page-Enter" content="revealTrans(Duration=1.0,Transition=23)">
+<meta http-equiv="Page-Exit" content="revealTrans(Duration=1.0,Transition=23)">
+<meta http-equiv=Pragma content=no-cache>
+<link type=text/css rel=stylesheet href=estilo.css>
+<script language="JavaScript">
+<!--
+
+var txt=" « Aqui você escreve o título e a descrição do site que ficarão rodando » Volte sempre ao nosso site!";
+
+var espera=200;
+
+var refresco=null;
+
+
+
+function rotulo_title() {
+
+        document.title=txt;
+
+        txt=txt.substring(1,txt.length)+txt.charAt(0);        
+
+        refresco=setTimeout("rotulo_title()",espera);}
+
+rotulo_title();
+
+// -->
+
+
+
+function MM_displayStatusMsg(msgStr) { //v1.0
+
+  status=msgStr;
+
+  document.MM_returnValue = true;
+
+}
+
+
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+
+  window.open(theURL,winName,features);
+
+}
+
+//-->
+
+</script>
+</head>
+
+<body>
+
+
+<h2>Título rodando</h2>
+
+<p>Com este código entre as tags &lt;head&gt; e &lt;/head&gt; a barra de título de seu site ficará rodando sem parar.</p>
+
+<center>
+<textarea readonly><script language="JavaScript">
+<!--
+
+var txt=" « Aqui você escreve o título e a descrição do site que ficarão rodando » Volte sempre ao nosso site!";
+
+var espera=200;
+
+var refresco=null;
+
+
+
+function rotulo_title() {
+
+        document.title=txt;
+
+        txt=txt.substring(1,txt.length)+txt.charAt(0);        
+
+        refresco=setTimeout("rotulo_title()",espera);}
+
+rotulo_title();
+
+// -->
+
+
+
+function MM_displayStatusMsg(msgStr) { //v1.0
+
+  status=msgStr;
+
+  document.MM_returnValue = true;
+
+}
+
+
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+
+  window.open(theURL,winName,features);
+
+}
+
+//-->
+
+</script>
+</textarea>
+

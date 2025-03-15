@@ -1,0 +1,35 @@
+@import url(estilo.css);
+body {background:#cc99ff url(fundo_lilas.gif);
+	 scrollbar-track-color:#cc99ff;
+ 	 scrollbar-face-color:#ffffff;
+	 scrollbar-3dlight-color:#cc99ff;
+	 scrollbar-highlight-color:#cc99ff;
+	 scrollbar-shadow-color:#cc99ff;
+	 scrollbar-darkshadow-color:#cc99ff;
+	 scrollbar-arrow-color:#cc99ff;}
+
+td {background:#ffffff; color:#000000;}
+a {color:#aa00aa;}
+a:link {color:#0000aa;}
+a:hover {color:#000000; background:#cc99ff;}
+button {background: #ffcc00;
+	border:0px;
+	color:#006600;}
+input {border:0px; background:#ffffff; color:#000000; border:1px solid #cc99ff;}
+hr {color:#cc99ff; background:#cc99ff;}
+ul {list-style-image:url(lista_lilas.jpg);}
+textarea  {color:#000000;
+	background :#ffffff;
+	border:1px solid #cc99ff;}
+h1, h2, h3, h4, h5, #titulo {color:#cc99ff;}
+	
+#back {background:url(bg_lilas.gif) right top repeat-y; border:0px;}
+#table td {border:0px;}
+.autor, #autor, #menorhot {color:#9900aa;}	
+#caixa {border-color:#ffeeee;}
+#quote {color:#9900aa;}
+#secoes a:hover {background:#cc99ff url(fundo_lilas.gif); font-weight:bold;}
+#recomende {border-color:#f0ccff;}
+#carac {color:#000000; border:1px solid #cc99ff;}
+#carac td {color:#000000; background:#ffffff; border:1px solid #cc99ff;}
+#carac th {color:#ffffff; background:#cc99ff;}

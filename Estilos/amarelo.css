@@ -1,0 +1,33 @@
+@import url(rosa.css);
+@import url(branco.css);
+body {background:#ffff00;
+	 scrollbar-track-color:#ffff00;
+	 scrollbar-3dlight-color:#ffff00;
+	 scrollbar-highlight-color:#ffff00;
+	 scrollbar-shadow-color:#ffff00;
+	 scrollbar-darkshadow-color:#ffff00;
+	 scrollbar-arrow-color:#ffff00;}
+
+
+#back {background:#ffff00 url(bg_amarelo.gif) right top repeat-y;	 
+	 
+td, p {color:#ffff00;}
+a {color:#ff6600;}
+a:link {color:#00ccff;}
+a:hover {background:#ffff00; color:black;}
+
+button {border-color: #ffff00;
+	border-right-color: #666600;
+	border-bottom-color: #666600;
+	color:#ffff00;}
+h1, h2, h3, h4, h5, #titulo {color:#cccc00;}
+input {border-color:#ffff00; color:#ffff00;}
+hr {color:#cccc00; background:#cccc00;}
+ul {list-style-image:url(lista_amarelo.jpg);}
+
+textarea  {color:#ffff00;
+	background :#000000;
+	border-color:#ffff00;}
+
+.autor, #autor, #menorhot, #quote {color:#cccc00;}
+#caixa {border-color:#ffffee;}

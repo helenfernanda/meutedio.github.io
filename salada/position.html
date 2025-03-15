@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Page-Enter" content="revealTrans(Duration=1.0,Transition=23)">
+<meta http-equiv="Page-Exit" content="revealTrans(Duration=1.0,Transition=23)">
+<meta http-equiv=Pragma content=no-cache>
+
+  <title>Net Mania</title>
+  <link type=text/css rel=stylesheet href=estilo.css>
+</head>
+<body>
+<h2>Posição</h2>
+
+<p>Utilizando margens, alinhamento, indentação e outras propriedades é possível definir a <B>posição relativa</b> de textos, tabelas, listas, imagens e outros elementos de uma página.
+<p>Com CSS é possível ainda definir a <B>posição absoluta</b> de qualquer elemento dentro da página utilizando a propriedade <B>position</b> com valor igual a <B>absolute</b>. <b>Relative</b> é o valor padrão.</p>
+<p><B>Left</b>, <B>right</b>, <B>top</b>, <B>bottom</b>, <B>width</b> e <b>height</b> são algumas das propriedades que definem a posição absoluta do elemento e os valores podem ser dados em pixels, polegadas, porcentagem, etc.</p>
+
+<hr>
+<p>Neste exemplo a imagem cobre parte do texto porque sua posição é absoluta em relação à margem esquerda da página.</p>
+
+Você não consegue ler tudo. <img src=Blinkies/53.gif style='position:absolute; left:100;'><BR><BR>
+
+<center><textarea readonly>Você não consegue ler tudo. &lt;img src=imagemqualquer.gif style='position:absolute; left:100;'&gt;</textarea></center>
+
+<hr>
+<p>Agora é o contrário, o texto fica sobre a figura:</p>
+
+<img src=botoes01/03.gif><span style='position:absolute; width:155; height:35; left:5; text-align:center;'><BR>Texto na figura.</span>
+
+<textarea readonly><img src=imagemescolhida.gif><span style='position:absolute; width:155; height:35; left:5; text-align:center;'><BR>Texto na figura.</span></textarea>
+
+</html>

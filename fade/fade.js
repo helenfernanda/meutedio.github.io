@@ -3,7 +3,7 @@ As first seen in http://www.dynamicdrive.com/forums/
 username:jscheuer1 - This credit must remain for legal use.
 */
 
-fadeInPage.speed=10; //Set speed of transition for non-IE, lower numbers are faster, 20 is the minimum safe value
+fadeInPage.speed=300; //Set speed of transition for non-IE, lower numbers are faster, 20 is the minimum safe value
 fadeInPage.bg='#fff'; //Set backgroud style (color or color and image) of transition division for non-IE, should match page background or the predominant color of the page
 
 ///////////////// Stop Editing /////////////////

@@ -1,0 +1,67 @@
+<html>
+<head>
+<meta http-equiv="Page-Enter" content="revealTrans(Duration=1.0,Transition=23)">
+<meta http-equiv="Page-Exit" content="revealTrans(Duration=1.0,Transition=23)">
+<meta http-equiv=Pragma content=no-cache>
+<script language="JavaScript">
+<!--
+var yourwords = "^_^ www.helenfernanda.kit.net ^_^";
+var speed = 250;
+var control = 1;
+function flash()
+{
+  if (control == 1)
+    {
+      window.status=yourwords;
+      control=0;
+    }  
+  else
+    {
+      window.status="";
+      control=1;
+    }
+  setTimeout("flash();",speed);
+}
+// -->
+</script>
+
+<link type=text/css rel=stylesheet href=estilo.css>
+</head>
+
+<body onload="flash();">
+<center>
+<h2>Texto na barra de status 4</h2>
+
+<p>Onde está escrito <b>^_^ www.helenfernanda.kit.net ^_^</b> escreva o texto que desejar.</p>
+
+<p>Este código vai entre as tags < h e a d > e < / h e a d >:</p>
+<textarea>
+<script language="JavaScript">
+<!--
+var yourwords = "^_^ www.helenfernanda.kit.net ^_^";
+var speed = 250;
+var control = 1;
+function flash()
+{
+  if (control == 1)
+    {
+      window.status=yourwords;
+      control=0;
+    }  
+  else
+    {
+      window.status="";
+      control=1;
+    }
+  setTimeout("flash();",speed);
+}
+// -->
+</script>
+</textarea>
+
+<p>Este código vai dentro da tag < b o d y >:</p>
+<textarea>
+<body onload="flash();">
+</textarea>
+</body>
+</html>

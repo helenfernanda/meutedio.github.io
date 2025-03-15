@@ -1,0 +1,178 @@
+<noembed>
+
+<body>
+</noembed>
+
+<table cellpadding=5 cellspacing=5 align=center>
+<tr>
+<td colspan=3 valign=center>
+ <h1><ItemPage><a href="<$BlogURL$>"></ItemPage>
+	<$BlogTitle$>
+
+<ItemPage></a></ItemPage></h1>
+  <p><$BlogDescription$></p>
+</tr>
+
+<tr>
+<td valign=top width=200px>
+<!-- Início do menu da esquerda -->
+
+<h2>O blog</h2>
+    
+<ul>
+<li><!-- Start FastWebCounter.com  --><a target="_blank" href="http://www.fastwebcounter.com" title="Free Web Counter"><script src="http://fastwebcounter.com/secure.php?s=<$BlogURL$>"></script> visitas</a>.<!-- End FastWebCounter.com  --></li>
+
+<li><a target="_blank" href="http://www.fastonlineusers.com" target="_blank"><script language="JavaScript" src="http://fastonlineusers.com/online.php?d=<$BlogURL$>"></script> visitando agora</a>.</li>
+<li><a href=# onClick="window.external.AddFavorite('<$BlogURL$>','<$BlogTitle$>');" title="<$BlogTitle$>">Favorito do IE</a>.</li>
+<li><a href=# onClick="this.style.behavior='url(#default#homepage)'; this.setHomePage('<$BlogURL$>');">Página inicial do IE</a>.</li>
+</ul>
+<hr>
+
+  <!-- Begin #profile-container -->
+  <$BlogMemberProfile$>
+  <!-- End #profile -->
+
+<hr>
+<h2>Últimas notícias</h2>
+  
+  <ul>
+    <BloggerPreviousItems>
+        <li><a href="<$BlogItemPermalinkURL$>"><$BlogPreviousItemTitle$></a></li>
+     </BloggerPreviousItems>
+  </ul>
+  
+<hr>  
+
+<MainOrArchivePage>
+<h2>Arquivos</h2>
+   <ul>
+   	  <BloggerArchives>
+    	<li><a href="<$BlogArchiveURL$>"><$BlogArchiveName$></a></li>
+	  </BloggerArchives>
+      <ArchivePage><li><a href="<$BlogURL$>">Current Posts</a></li></ArchivePage>
+  </ul>
+
+  </MainOrArchivePage>  
+
+<hr>
+<center><a href="#">Topo da página</a></center>  
+<!-- Fim do menu da esquerda -->
+
+<td valign=top width=*>
+<!-- Início da data dos posts -->
+
+<Blogger>
+<BlogDateHeader>
+<h2><$BlogDateHeaderDate$></h2>
+</BlogDateHeader>
+<BR>
+<!-- Fim da data dos posts -->
+
+  
+<!-- Começo do post -->
+  <a name="<$BlogItemNumber$>"></a>
+     <BlogItemTitle>
+<b><center>
+<BlogItemUrl><a href="<$BlogItemUrl$>" title="external link"></BlogItemUrl>
+	 <$BlogItemTitle$>
+	 <BlogItemUrl></a></BlogItemUrl>
+    </center></b>
+    </BlogItemTitle>
+     
+    <p><$BlogItemBody$></p>
+
+       
+    <p>
+      escrito por <$BlogItemAuthorNickname$> às <a href="<$BlogItemPermalinkUrl$>" title="permanent link"><$BlogItemDateTime$></a> | 
+      <BlogItemCommentsEnabled>
+<a href="<$BlogItemCommentCreate$>"><$BlogItemCommentFormOnclick$>> <$BlogItemCommentCount$> comentários</a>
+      </BlogItemCommentsEnabled> <$BlogItemControl$>
+    </p>
+  
+
+<!-- fim do post -->
+<hr>
+  
+  <!-- Início dos comentários -->
+ <ItemPage>
+
+<BlogItemCommentsEnabled><a name="comments"></a>
+<h2><$BlogItemCommentCount$> comentários:</h2>
+    
+    <dl>
+      <BlogItemComments>
+      <dt class="comment-data" id="c000000045"><a name="c<$BlogCommentNumber$>"></a>
+        Às <a href="#c<$BlogCommentNumber$>" title="comment permalink"><$BlogCommentDateTime$></a>,
+        <$BlogCommentAuthor$> disse...
+      </dt>
+
+      <dd class="comment-body">
+        <p><$BlogCommentBody$></p>
+	  <$BlogCommentDeleteIcon$>
+      </dd>
+     </BlogItemComments>
+    </dl>
+	
+<p><$BlogItemCreate$></p>
+  
+  </BlogItemCommentsEnabled>
+
+	
+<p>
+<a href="<$BlogURL$>">Início</a>
+</p>
+
+
+</ItemPage>
+<!-- Fim dos comentários -->
+
+</Blogger>
+
+<hr>
+<center><a href="#">Topo da página</a></center>
+
+<td valign=top width=150px>
+
+<h2>Blogs favoritos</h2>
+<ul>
+<!-- Coloque aqui os endereços de seus blogs favoritos -->
+<li><a target="_blank" href="http://busqueoalto.blogspot.com">Busque o Alto</a>
+<li><a target="_blank" href="http://correiomania.blogspot.com">Correio Mania</a>
+<li><a target="_blank" href="http://helenfernanda.blogspot.com">Helen Fernanda</a>
+<li><a target="_blank" href="http://saladadigital.blogspot.com">Salada digital</a>
+</ul>
+
+<hr>
+<h2>Flogs favoritos</h2>
+
+<ul>
+<!-- Coloque aqui os endereços de seus flogs favoritos -->
+<li><a target="_blank" href="http://www.helenfernanda.gigafoto.com.br">Helen Fernanda</a>
+</ul>
+
+<hr>
+<h2>Sites de rotina</h2>
+<ul>
+<!-- Coloque aqui os endereços de sites que você visita com mais frequência -->
+<li><a target="_blank" href="http://www.1grau.com.br">1grau</a>
+<li><a target="_blank" href="http://www.gmail.com">Gmail</a>
+<li><a target="_blank" href="http://www.google.com.br">Google</a>
+<li><a target="_blank" href="http://www.msn.com.br">MSN</a>
+<li><a target="_blank" href="http://www.orkut.com">Orkut</a>
+<li><a target="_blank" href="http://www.yahoo.com.br">Yahoo!</a>
+</ul>
+  
+<hr>  
+<center><a target="_blank" href="http://www.blogger.com"><img src="http://buttons.blogger.com/bloggerbutton1.gif" alt="Powered by Blogger" /></a></center>
+<hr>
+<center><a href="#">Topo da página</a></center>
+
+</tr>
+
+<tr>
+
+<td colspan=3>
+<center>Template da <a target="_blank" href="http://saladadigital.cjb.net">Helen Fernanda</a>. Feito com o bloco de notas.</center>
+</table>
+</body>
+</html>

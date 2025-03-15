@@ -1,0 +1,177 @@
+<html>
+<head>
+<meta http-equiv="Page-Enter" content="revealTrans(Duration=1.0,Transition=23)">
+<meta http-equiv="Page-Exit" content="revealTrans(Duration=1.0,Transition=23)">
+<meta http-equiv=Pragma content=no-cache>
+<link type=text/css rel=stylesheet href=estilo.css>
+</head>
+
+<script language="JavaScript">
+
+<!-- Hide the script from old browsers --
+
+function MakeArray(n){
+
+   this.length=n;
+
+   for(var i=1; i<=n; i++) this[i]=i-1;
+
+   return this
+
+}
+
+
+
+hex=new MakeArray(16);
+
+hex[11]="a"; hex[12]="b"; hex[13]="c"; hex[14]="d"; hex[15]="e"; hex[16]="f";
+
+
+
+function ToHex(x){              
+
+   var high=x/16;
+
+   var s=high+"";               
+
+   s=s.substring(0,2);          
+
+   high=parseInt(s,10);        
+
+   var left=hex[high+1];        
+
+   var low=x-high*16;           
+
+   s=low+"";                    
+
+   s=s.substring(0,2);          
+
+   low=parseInt(s,10);          
+
+   var right=hex[low+1];       
+
+   var string=left+""+right;   
+
+   return string;
+
+}
+
+
+
+function rainbow(text){
+
+   text=text.substring(3,text.length-4);        
+
+   color_d1=255;                                
+
+   mul=color_d1/text.length;
+
+   for(i=0;i<text.length;i++){
+
+      color_d1=255*Math.sin(i/(text.length/3)); 
+
+      color_h1=ToHex(color_d1);
+
+      color_d2=mul*i;
+
+      color_h2=ToHex(color_d2);
+
+      document.write("<FONT COLOR='#00"+color_h1+color_h2+"'>"+text.substring(i,i+1)+'</FONT>');}}
+
+// --End Hiding Here -->
+
+</script>
+
+<body>
+
+<h2><script LANGUAGE="JavaScript"> {rainbow("-->Texto colorido<!__");} </script></h2>
+
+<p>Localize no código onde está escrito <B>#ff</b> e modifique para ter novas sequências de cores. Sugestões: <B>#00</b>, <B>#33</b>, <B>#66</b>, <B>#99</b>, <B>#cc</b>.</p>
+
+<center>
+<textarea>
+<script language="JavaScript">
+<!-- Hide the script from old browsers --
+
+function MakeArray(n){
+
+   this.length=n;
+
+   for(var i=1; i<=n; i++) this[i]=i-1;
+
+   return this
+
+}
+
+
+
+hex=new MakeArray(16);
+
+hex[11]="a"; hex[12]="b"; hex[13]="c"; hex[14]="d"; hex[15]="e"; hex[16]="f";
+
+
+
+function ToHex(x){              
+
+   var high=x/16;
+
+   var s=high+"";               
+
+   s=s.substring(0,2);          
+
+   high=parseInt(s,10);        
+
+   var left=hex[high+1];        
+
+   var low=x-high*16;           
+
+   s=low+"";                    
+
+   s=s.substring(0,2);          
+
+   low=parseInt(s,10);          
+
+   var right=hex[low+1];       
+
+   var string=left+""+right;   
+
+   return string;
+
+}
+
+
+
+function rainbow(text){
+
+   text=text.substring(3,text.length-4);        
+
+   color_d1=255;                                
+
+   mul=color_d1/text.length;
+
+   for(i=0;i<text.length;i++){
+
+      color_d1=255*Math.sin(i/(text.length/3)); 
+
+      color_h1=ToHex(color_d1);
+
+      color_d2=mul*i;
+
+      color_h2=ToHex(color_d2);
+
+      document.write("<FONT COLOR='#FF"+color_h1+color_h2+"'>"+text.substring(i,i+1)+'</FONT>');
+
+   }
+
+}
+
+
+
+// --End Hiding Here -->
+
+</script>
+
+<body>
+
+<p><script LANGUAGE="JavaScript"> {rainbow("-->Aqui você escreve o texto que vai ficar colorido.<!__");} </script></p></textarea>
+

@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<!--  Created with the CoffeeCup HTML Editor  -->
+<!--        http://www.coffeecup.com/         -->
+<head>
+<meta http-equiv="Page-Enter" content="revealTrans(Duration=1.0,Transition=23)">
+<meta http-equiv="Page-Exit" content="revealTrans(Duration=1.0,Transition=23)">
+<meta http-equiv=Pragma content=no-cache>
+
+  <title>Net Mania</title>
+  <link type=text/css rel=stylesheet href=estilo.css>
+
+<style type=text/css>
+td, th {border:1 solid skyblue;}
+</style>
+
+</head>
+<body>
+<h2>Links</h2>
+
+<p>Para criar um link deve ser utilizada a tag <B>&lt;a&gt;</b> que tem os seguintes parâmetros:</p>
+<ul>
+<li><B>href</b> define para onde o link leva ao ser clicado. Se <b>href=#</b> o link abre a mesma página onde se encontra o link, na mesma ou em outra janela.
+<li><B>title</b> é opcional e serve para escrever um texto que aparecerá qüando o cursor estiver sobre o link.
+<li><B>name</b> serve para você nomear um link.
+<li><B>target</b> define em que janela a página será aberta, caso o link chame outra página. Se a página deve abrir na janela atual, basta omitir este parâmetro ou usar <B>_self</b>. Caso você queira que a página abra em uma nova janela você pode dar qüalquer nome a esta nova janela ou utilizar <B>_blank</b>. Caso o site utilize frames ou iframes <B>_parent</b> abre a página no próximo frame e <b>_top</b> abre na janela principal.
+</ul>
+<p>Links para e-mail só funcionam se o visitante tiver um programa de e-mail instalado e configurado em sua máquina.</p>
+
+<table align=center>
+<tr>
+<th>Exemplo
+<th>Código
+
+<tr>
+<TD>
+<a href=# target=jornalismo title='Esta página em outra janela'>Esta página</a>
+<TD>
+<code>&lt;a href=# target=jornalismo title='Esta página em outra janela'&gt;Esta página&lt;/a&gt;</code>
+
+<tr>
+<TD>
+<a href=capa.html target=luiz title='Página Inicial'>Página Inicial</a>
+<TD>
+<code>&lt;a href=capa.html target=luiz title='Página Inicial'&gt;Página Inicial&lt;/a&gt;</code>
+
+<TR>
+<TD>
+<a href=http://www.helenfernanda.cjb.net target=lua title='Site da Helen Fernanda'>Helen Fernanda</a><BR>
+<TD>
+<code>&lt;a href=http://www.helenfernanda.cjb.net target=lua title='Site da Helen Fernanda'&gt;Helen Fernanda&lt;/a&gt;</code>
+
+<tr>
+<TD>
+<a href="mailto:helen@pur.com.br?subject=Net Mania" title='E-mail para Helen Fernanda'>helen@pur.com.br</a>
+<TD>
+<code>&lt;a href="mailto:helen@pur.com.br?subject=Net Mania" title='E-mail para Helen Fernanda'&gt;helen@pur.com.br&lt;/a&gt;</code>
+
+</table>
+
+<p>Você pode criar um link para uma seção dentro da própria página:
+
+<table>
+<TR>
+<Th>
+Isto você coloca no link:
+<th>
+Isto você coloca no local para onde o link deve levar:
+
+<Tr>
+<td>
+<code>&lta href=#nome&gt;Clique aqui para ir lá.&lt;/a&gt;</code>
+<TD>
+<code>&lt;a name=nome&gt;&lt;/a&gt;Aqui vem o que você quiser.</code>
+
+</table></p>
+
+<p>Com <B>HTML</b> as cores dos links podem ser definidas dentro da tag <b>&lt;body&gt;</b> com os seguintes parâmetros:
+
+<ul>
+<li><b>link</b> é a cor dos links que ainda não foram visitads
+<li><b>alink</b> é a cor do link no momento em que é clicado
+<li><B>vlink</b> é a cor do link já visitado
+</ul></p>
+
+<center><code>&ltbody bgcolor=black link='deeppink' alink='#ffaaff' vlink='rgb(255 40 255)'&gt;</code></center>
+
+</body>
+</html>

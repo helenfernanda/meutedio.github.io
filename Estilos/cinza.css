@@ -1,0 +1,33 @@
+@import url(rosa.css);
+body {background:#999999;
+	 scrollbar-track-color:#999999;
+	 scrollbar-3dlight-color:#999999;
+	 scrollbar-highlight-color:#999999;
+	 scrollbar-shadow-color:#999999;
+	 scrollbar-darkshadow-color:#999999;
+	 scrollbar-arrow-color:#999999;}
+
+#back {background:#999999 url(bg_cinza.gif) right top repeat-y;}
+	 
+td, p {background:#ffffff; color:#000000;}
+a {color:#999999;}
+a:link {color:#666666;}
+a:hover {background:#000000; color:#ffffff;}
+
+button {background: #ffffff;
+	border-color: #cccccc;
+	border-right-color: #666666;
+	border-bottom-color: #666666;
+	color: #000000;}
+h1, h2, h3, h4, h5, #titulo {color:#999999;}
+input {border-color:#cccccc; color:#000000;}
+hr {color:#666666; background:#666666;}
+ul {list-style-image:url('lista_cinza.jpg');}
+
+textarea  {color:#000000;
+	background :#ffffff;
+	border-color:#cccccc;}
+
+.autor, #autor, #menorhot {color:#666666;}	
+#caixa {border-color:#cccccc;}
+#quote {color:#666666;}

@@ -1,0 +1,167 @@
+<head>
+<meta http-equiv="Page-Enter" content="revealTrans(Duration=1.0,Transition=23)">
+<meta http-equiv="Page-Exit" content="revealTrans(Duration=1.0,Transition=23)">
+<meta http-equiv="Pragma" content="no-cache">
+
+	<title>* <%WindowTitle%> *</title>
+
+</head>
+
+<noembed>
+<body>
+</noembed>
+
+<table cellpadding=5 cellspacing=5 align=center width=100% align="center">
+<tr>
+<td colspan=3 valign=center>
+ <h1><%Title%></h1>
+
+<!-- Menu horizontal -->
+<BR>
+<div align=center>
+
+<b><a class='menu' href='<%MainPageURL%>'>Início</a> | <a class='menu' href='<%ProfileURL%>'>Perfil</a> | <a class='menu' href='<%ArchiveURL%>'>Arquivos</a> | <a class='menu' href='<%FriendsPageURL%>'>Amigos</a></b>
+
+</div>
+<BR>
+<!-- Fim do menu horizontal -->
+</td>
+</tr>
+
+<tr>
+<td valign=top width=*>
+<!-- ARCHIVE PAGE -->
+<IfArchivePage>
+<center><h2>Arquivos</h2></center>
+<BR>
+<%ArchiveInfo%>
+</IfArchivePage>
+
+<BR><BR>
+
+<!-- MAIN PAGE -->
+<IfMainPage>
+<Entry>
+<center><h2><%EntryDate%></h2></center>
+<h3><%EntryTitle%></h3>
+<p><%EntryBody%><IfCategoriesAllowed></p>
+<p id="ass">Postado em <%EntryCategory%></p></IfCategoriesAllowed>
+<br><BR>
+<IfCommentsAllowed><a href='<%EntryURL%>'><%EntryCommentCount%> Comentários</a><IfCommentPostAllowed> | <a href='<%CommentPostURL%>'>Comentar</a></IfCommentPostAllowed> | </IfCommentsAllowed><a href='<%EntryURL%>'>Link</a> | <SendThisLink>Enviar para um amigo</SendThisLink>
+<hr>
+</Entry>
+</IfMainPage>
+
+<!-- ENTRY PAGE -->
+<IfEntryPage>
+<Entry>
+<br>
+
+<center><h2><%EntryDate%></h2></center>
+<h3><%EntryTitle%></h3>
+<p><%EntryBody%><IfCategoriesAllowed></p>
+<p id="ass">Postado em <%EntryCategory%></p></IfCategoriesAllowed>
+<br><BR>
+<IfCommentsAllowed><IfCommentPostAllowed><a href='<%CommentPostURL%>'>Comentar</a>
+<hr>
+</IfCommentPostAllowed></IfCommentsAllowed>
+
+<IfCommentsAllowed>
+<Comment>
+<a href='<%CommentURL%>'><b><%CommentTitle%></b></a>
+<p id="ass"><%CommentDate%></p>
+<p><%CommentBody%></p>
+<p id="ass">Postado por <%CommentAuthor%> <%CommentAuthorIP%></p> <CommentEdit>Editar</CommentEdit> <CommentDelete>Apagar</CommentDelete>
+<hr>
+</Comment>
+</IfCommentsAllowed>
+</Entry>
+</IfEntryPage>
+
+
+<!-- FRIENDS PAGE -->
+<IfFriendsPage>
+<Entry>
+<center><h2><%EntryDate%></h2></center>
+<h3><%EntryTitle%></h3>
+<p><%EntryBody%></p>
+<p id="ass">Postado por <%EntryAuthor%></p>
+<IfCommentsAllowed><a href='<%EntryURL%>'><%EntryCommentCount%> Comentários</a><IfCommentPostAllowed> | <a href='<%CommentPostURL%>'>Comentar</a></IfCommentPostAllowed> | </IfCommentsAllowed><a class='dark' href='<%EntryURL%>'>Link</a>
+<hr>
+</Entry>
+</IfFriendsPage>
+
+<IfPages>
+<center>
+<b><IfMainPage>Página</IfMainPage> <IfFriendsPage>Página</IfFriendsPage> <IfEntryPage>Artigo</IfEntryPage> <%CurrentPage%> de <%TotalPages%></b>
+
+<BR><BR>
+
+<font class='disabled'><LaterLink>Anterior</LaterLink></font> | <font class='disabled'><EarlierLink>Próxima</LaterLink></font>
+
+</center>
+</IfPages>
+</center>
+
+<hr>
+<center><a href="#">Topo da página</a></center>
+
+<td valign=top width=200px>
+<!-- Início do menu da esquerda -->
+    
+<h2>O blog</h2>
+
+  <p><%Description%></p>
+    
+<ul>
+<li><!-- Start FastWebCounter.com  --><a target="_blank" href="http://www.fastwebcounter.com" title="Free Web Counter"><script src="http://fastwebcounter.com/secure.php?s=<%MainPageURL%>"></script> visitas</a>.<!-- End FastWebCounter.com  --></li>
+<li><a target="_blank" href="http://www.fastonlineusers.com" target="_blank"><script language="JavaScript" src="http://fastonlineusers.com/online.php?d=<%MainPageURL%>"></script> visitando agora</a>.</li>
+<li><a href=# onClick="window.external.AddFavorite('<%MainPageURL%>','<%Title%>');" title="Adicione este blog aos favoritos do Internet Explorer.">Favorito do IE</a>.</li>
+<li><a href=# onClick="this.style.behavior='url(#default#homepage)'; this.setHomePage('<%MainPageURL%>');" title="Defina este blog como página inicial do Internet Explorer">Página inicial do IE</a>.</li>
+</ul>
+<hr>
+
+<h2>Blogs favoritos</h2>
+<ul>
+<!-- Coloque aqui os endereços de seus blogs favoritos -->
+<li><a target="_blank" href="http://www.correiomania.blogspot.com">Correio Mania</a>
+<li><a target="_blank" href="http://www.helenfernanda.blogger.com.br">Helen Fernanda</a>
+<li><a target="_blank" href="http://www.saladadigital.blogspot.com">Salada digital</a>
+<li><a target="_blank" href="http://www.templatesmania.blogger.com.br">Templates Mania</a>
+</ul>
+
+<hr>
+<h2>Flogs favoritos</h2>
+<ul>
+<!-- Coloque aqui os endereços de seus flogs favoritos -->
+<li><a target="_blank" href="http://www.helenfernanda.gigafoto.com.br">Helen Fernanda</a>
+</ul>
+
+<hr>
+<h2>Sites de rotina</h2>
+<ul>
+<!-- Coloque aqui os endereços de sites que você visita com mais frequência -->
+<li><a target="_blank" href="http://www.1grau.com.br">1grau</a>
+<li><a target="_blank" href="http://www.gmail.com">Gmail</a>
+<li><a target="_blank" href="http://www.google.com.br">Google</a>
+<li><a target="_blank" href="http://www.msn.com.br">MSN</a>
+<li><a target="_blank" href="http://www.orkut.com">Orkut</a>
+<li><a target="_blank" href="http://www.yahoo.com.br">Yahoo!</a>
+</ul>
+  
+<hr>
+<h2>Créditos</h2>
+<ul>
+<li><a target="_blank" href="http://kitblog.net">KitBlog</a>
+</ul>
+<hr>
+<center><a href="#">Topo da página</a></center>
+
+</tr>
+
+<tr>
+<td colspan=3>
+<center>Template da <a target="_blank" href="http://www.templatesmania.blogger.com.br">Helen Fernanda</a>. Feito com o bloco de notas.</center>
+</table>
+</body>
+</html>

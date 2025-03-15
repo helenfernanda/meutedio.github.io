@@ -1,0 +1,121 @@
+body {
+        cursor:'url(cursor.ani)';                    
+        border:0px;
+        color:#800080;
+        font-family : verdana;
+        scrollbar-track-color:#ff0099; 
+        scrollbar-face-color:#ffffff; 
+        scrollbar-3dlight-color:#ff0099;
+        scrollbar-highlight-color:#ff0099; 
+        scrollbar-shadow-color:#ff0099; 
+        scrollbar-darkshadow-color:#ff0099; 
+        scrollbar-arrow-color:#ff0099;
+		margin:0px;
+		background:#ff0099;}
+		
+table {font-size:11px;}
+td {background:#ffffff; border:0px; padding:5px;}
+
+#table {background:transparent; font-size : 11px; border:0px; padding:0px;}
+#back {background:right top repeat-y; width:121px; padding:0px;}
+
+p {text-indent : 24px;
+   text-align : justify;
+   margin:5px;}
+
+.autor, #autor {text-indent:0px;
+           text-align:right;
+           color:hotpink;}
+
+.menu {display:none;}
+
+dl, ol, ul {text-align :left;}
+ol li {list-style-image:none;}
+		
+dt {font-weight:bold;
+    color:hotpink;}
+
+h1 {font-size:32px;}
+h2 {font-size:20px;}
+h3 {font-size:18px;}
+h4 {font-size:16px;}
+
+h1, h2, h3, h4  {color:hotpink;
+        font-family :'comic sans ms';
+		font-weight:normal;
+		padding-left:2px;}
+
+hr  {border:0px;	height :1px;	text-align:center;	width:90%;}
+
+select  {
+	background :#ffddff;
+	border : 0px;
+	color :hotpink;
+	font-family : verdana;
+	font-size : 11px;
+}
+
+input {background: #ffffff;
+	border:1px solid #ff0099; 
+	color :purple;
+	font-family : verdana;
+	font-size : 11px;}
+
+button {cursor:crosshair;
+        background: #ffffff;
+	border-top: 1px solid #ffccff;
+	border-left: 1px solid #ffccff;
+	border-right : 1px solid hotpink;
+	border-bottom : 1px solid hotpink;
+	color :hotpink;
+	font-family : verdana;
+	font-size : 11px;}
+
+textarea  {font-family : verdana;
+	font-size : 11px;
+	color :purple;
+	background :#ffddff;
+	border:hotpink 3px double;}
+
+fieldset {border:1px hotpink solid;}
+
+img {border:0px;}
+
+a {cursor:crosshair;
+   color:#b164ff;
+   text-decoration:none;}
+a:link {color:#428dff;}
+a:hover {background:#ff66cc; color:#fff0ff; text-indent:0px;}
+a:active  {text-decoration : line-through;}
+
+#menor {font-size:10px;}
+#menorhot {font-size:10px; color:hotpink;}
+#caixa {border:1px solid #ffeeff; border-top:0px; border-left:0px; overflow:auto; width:200px; height:100px;}
+#topo {width:*;}
+#esquerda {width:*;}
+#direita {width:*;}
+#quote {text-align:left; font-family:arial; font-weight:bold; font-size:13px; font-style:italic; color:#ff0099;}
+#titulo {font-family:verdana; font-size:80px; text-align:left; letter-spacing:0px;}
+#subtitulo {font-size:20px; letter-spacing:6px;}
+#recomende {margin-top:20px; padding:5px; border:2px dotted #cccccc; text-align:center; align:center;}
+#carac {border:1px solid; background:transparent; font-size:13px; text-align:center;}
+#carac td {border:1px solid #cccccc; padding:3px;}
+#carac th {background:#cccccc; color:#000000; border:0px; padding:3px; font-family:comic sans ms;}
+#nome {background:url(nome_preto.gif) no-repeat center top; width:634px; height:158px;}
+#secoes {text-align:center;}
+#secoes a {padding:5px; line-height:29px; border-left:2px dotted; border-top:1px solid;}
+#secoes a:hover {border:0px;}
+
+#es-rosa {cursor:crosshair; background:#ffffff; color:#ff0099; border:1px solid;}
+#es-azul {cursor:crosshair; background:#ffffff; color:#0099ff; border:1px solid;}
+#es-verde {cursor:crosshair; background:#ffffff; color:#009900; border:1px solid;}
+#es-verdeescuro {cursor:crosshair; background:#ffffff; color:#006611; border:1px solid;}
+#es-cinza {cursor:crosshair; background:#ffffff; color:#666666; border:1px solid;}
+#es-aqua {cursor:crosshair; background:#000000; color:#00ffff; border:1px solid;}
+#es-limao {cursor:crosshair; background:#000000; color:#00ff00; border:1px solid;}
+#es-amarelo {cursor:crosshair; background:#000000; color:#ffff00; border:1px solid;}
+#es-branco {cursor:crosshair; background:#000000; color:#ffffff; border:1px solid;}
+#es-vermelho {cursor:crosshair; background:#ffffff; color:#ff0000; border:1px solid;}
+#es-natal {cursor:crosshair; background:#006600; color:#ffcc00; border:1px solid #ff0000;}
+#es-lilas {cursor:crosshair; background:#ffffff; color:#cc99ff; border:1px solid;}
+#es-laranja {cursor:crosshair; background:#ffffff; color:#ff6600; border:1px solid;}

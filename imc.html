@@ -1,0 +1,236 @@
+<script language="JavaScript" type="text/javascript" src="imc.js"></script>
+<script language="JavaScript" type="text/javascript" src="cabeca.html"></script>
+<script language="JavaScript" type="text/javascript" src="topo.html"></script>
+<script language="JavaScript" type="text/javascript" src="menu.html"></script>
+<script language="JavaScript" type="text/javascript" src="parceiros.html"></script>
+
+<h2>Índice de Massa Corporal</h2>
+
+<p>O Índice de Massa Corporal <b>(IMC)</b>
+ </font> é reconhecido como padrão internacional para avaliar o grau de
+ obesidade. O <b>IMC</font></b> é calculado dividindo o peso (em kg)
+ pela altura ao quadrado (em m).</font></p>
+ </p>
+
+ <p>Utilize os campos abaixo para calcular o seu
+ IMC. Caso esteje abaixo ou acima do "peso saudável" procure seu médico. Não faça dietas radicais, nem tome nenhuma medicação para ganhar ou perder peso sem prescrição médica.</i>
+ </p>
+
+ <!--webbot BOT="GeneratedScript" PREVIEW=" " startspan --><script Language="JavaScript"><!--
+function FrontPage_Form1_Validator(theForm)
+{
+
+  if (theForm.TPeso.value == "")
+  {
+    alert("Digite um valor para o campo \"Peso em Kg\".");
+    theForm.TPeso.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-,.";
+  var checkStr = theForm.TPeso.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ",")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ".")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Digite somente dígito caracteres no campo \"Peso em Kg\".");
+    theForm.TPeso.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Digite um número válido no campo \"TPeso\".");
+    theForm.TPeso.focus();
+    return (false);
+  }
+
+  var chkVal = allNum;
+  var prsVal = parseFloat(allNum);
+  if (chkVal != "" && !(prsVal > "0"))
+  {
+    alert("Digite um valor maior que \"0\" no campo \"Peso em Kg\".");
+    theForm.TPeso.focus();
+    return (false);
+  }
+
+  if (theForm.TAltura.value == "")
+  {
+    alert("Digite um valor para o campo \"TAltura\".");
+    theForm.TAltura.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-,.";
+  var checkStr = theForm.TAltura.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ",")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ".")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Digite somente dígito caracteres no campo \"TAltura\".");
+    theForm.TAltura.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Digite um número válido no campo \"TAltura\".");
+    theForm.TAltura.focus();
+    return (false);
+  }
+
+  var chkVal = allNum;
+  var prsVal = parseFloat(allNum);
+  if (chkVal != "" && !(prsVal > "0"))
+  {
+    alert("Digite um valor maior que \"0\" no campo \"TAltura\".");
+    theForm.TAltura.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-.,";
+  var checkStr = theForm.TIMC.value;
+  var allValid = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch == ".")
+    {
+      allNum += ".";
+      decPoints++;
+    }
+    else if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Digite somente dígito caracteres no campo \"TIMC\".");
+    theForm.TIMC.focus();
+    return (false);
+  }
+
+  if (decPoints > 1)
+  {
+    alert("Digite um número válido no campo \"TIMC\".");
+    theForm.TIMC.focus();
+    return (false);
+  }
+  return (true);
+}
+//--></script>
+
+  <table align=center>
+    <tr>
+      <td>Peso (massa corporal): </font></strong><input type="text" name="TPeso" size="5">kg</b></font>
+      </td>
+      <td>Exemplo: 80 kg</b></font></td>
+    </tr>
+    <tr>
+      <td>Estatura (altura): </font></strong><input type="text" name="TAltura" size="5">m</b></font>
+      </td>
+      <td>Exemplo: 1,80 m</b></font></td>
+    </tr>
+    <tr>
+      <td style="text-align:center;" colspan=2>
+  <input type="button" LANGUAGE="VBScript" VALUE="Calcular" ONCLICK="
+
+If TPeso.value = &quot;&quot; or Not IsNumeric(TPeso.value) Then
+	MsgBox &quot;Informe um valor para o Peso.&quot;
+	TPeso.focus
+	Exit Sub
+End If
+
+If TAltura.value = &quot;&quot; or Not IsNumeric(TAltura.value) Then
+	MsgBox &quot;Informe um valor para a altura.&quot;
+	TAltura.focus
+	Exit Sub
+End If
+
+TIMC.value = (TPeso.value / (TAltura.value*TAltura.value))" NAME="cmdCompute"><input TYPE="reset" VALUE="Limpar" NAME="B1"> </font></td>
+
+    <tr>
+      <td style="text-align:center;" colspan=2>Meu IMC é de: <input type="text" name="TIMC" size="8" style="text-align: right">Kg/m<sup>2</sup>
+  </table>
+</form>
+
+<p style="text-align:center; font-weight:bold;">IMC = massa corporal ÷ (estatura)<sup>2</sup></span></p>
+
+<center>
+<table title="Saiba em que categoria você se enquadra" align=center border='1px' bordercolor=hotpink rules='all' frame='void' cellpadding=2px cellspacing=2px>
+<tr>
+<th>IMC<th>Categoria
+<TR>
+<TD>Abaixo de 18,5<TD>Abaixo do peso
+<TR>
+<td>18,5 - 24,9<td>Peso normal/peso saudável
+<TR>
+<td>25,0 - 29,9<td>Sobrepeso
+<TR>
+<td>30,0 - 34,9<td>Obesidade Grau I
+<tr>
+<TD>35,0 - 39,9<td>Obesidade Grau II
+<TR>
+<TD>40,0 e acima<td>Obesidade Grau III
+</table>
+</center>
+
+<img src="imagens/350.gif">
+
+</td>
+</tr>
+
+<td colspan="2">
+<script language="Javascript" type="text/javascript" src="base.html"></script>
+</table>
+
+</body>

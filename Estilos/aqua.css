@@ -1,0 +1,32 @@
+@import url(rosa.css);
+@import url(branco.css);
+body {background:#00ffff;
+	 scrollbar-track-color:#00ffff;
+	 scrollbar-3dlight-color:#00ffff;
+	 scrollbar-highlight-color:#00ffff;
+	 scrollbar-shadow-color:#00ffff;
+	 scrollbar-darkshadow-color:#00ffff;
+	 scrollbar-arrow-color:#00ffff;}
+
+#back {background:#00ffff url(bg_aqua.gif) right top repeat-y;}
+	 
+td, p {color:#00ffff;}
+a {color:#ffff00;}
+a:link {color:#00ff00;}
+a:hover {background:#00ffff; color:black;}
+
+button {border-color: #00ffff;
+	border-right-color: #006666;
+	border-bottom-color: #006666;
+	color:#00ffff;}
+h1, h2, h3, h4, h5, #titulo {color:#00cccc;}
+input {border-color:#00ff00; color:#00ffff;}
+hr {color:rgb(0,166,166); background:rgb(0,166,166);}
+ul {list-style-image:url(lista_aqua.jpg);}
+
+textarea  {color:#00ffff;
+	background :#000000;
+	border-color:#00ffff;}
+
+.autor, #autor, #menorhot, #quote {color:#00cccc;}
+#caixa {border-color:#eeffff;}

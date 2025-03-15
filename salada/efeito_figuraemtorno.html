@@ -1,0 +1,210 @@
+<head>
+<link type=text/css rel=stylesheet href=estilo.css>
+</head>
+<body>
+<center>
+<h2>Figura em torno do cursor</h2>
+
+<p>Este efeito é muito legal! Uma única figura se multiplica por sete para deixar seu blog/site mais divertido. Selecione (Ctrl+A), copie (Ctrl+C) e cole (Ctrl+V) o código entre as tags < b o d y > e <  / b o d y > da página onde deseja usá-lo. Onde está escrito <b>http://www.helenfernanda.kit.net/Figuras/flor.gif</b> você pode modificar e colocar o caminho da figura de sua preferência.</p>
+
+<textarea>
+<IMG id=balloon style="DISPLAY: none" src="http://www.helenfernanda.kit.net/Figuras/flor.gif">
+
+<SCRIPT language=javascript>
+var images=balloon.src;//Put your image name here!!  
+var amount=7;//Number of images here. Do not alter for this script!!
+var cnter=30;
+var step;
+var currStep = 0;
+var Xpos = 0;
+var Ypos = 0;
+if (document.all)
+{
+document.write('<div id="ieDiv" style="position:absolute;top:0px;left:0px">')
+document.write('<div id="c" style="position:relative">');
+for (n=0; n < amount; n++)
+document.write('<img src=" '+images+'" style="position:absolute;top:0px;left:0px">')
+document.write('</div>')
+document.write('</div>')
+
+function MsieMouseFollow(){
+ Xpos = document.body.scrollLeft+event.x-5;
+ Ypos = document.body.scrollTop+event.y-5;
+ }
+ document.onmousemove = MsieMouseFollow;
+}
+else if (document.layers)
+{
+window.captureEvents(Event.MOUSEMOVE);
+for (ns=0; ns < amount; ns++) 
+document.write("<LAYER NAME='n"+ns+"' LEFT=0 TOP=0><IMG SRC='"+images+"'></LAYER>");
+function NsMouseFollow(evnt){
+ Xpos = evnt.pageX-5;
+ Ypos = evnt.pageY-5;
+ }
+ window.onMouseMove = NsMouseFollow;
+}
+
+function Swirl(){
+if (currStep<0.0550)
+step=0.001;
+if (document.all)
+{
+ for (i=0;i<ieDiv.all.c.all.length;i++)
+ {
+ieDiv.all.c.all[i].style.top = Ypos+cnter*Math.cos((currStep+i*4.5)/5)*Math.sin((currStep)*150);
+ieDiv.all.c.all[i].style.left = Xpos+cnter*Math.sin((currStep+i*4.5)/5)*Math.sin((currStep)*150);
+ }
+}
+else if (document.layers)
+{
+ for ( i = 0 ; i < ns ; i++ )
+ {
+  var temp="n"+i
+  document.layers[temp].top = Ypos+cnter*Math.cos((currStep+i*4.5)/5)*Math.sin((currStep)*150);
+  document.layers[temp].left =Xpos+cnter*Math.sin((currStep+i*4.5)/5)*Math.sin((currStep)*150);
+ }
+}
+currStep += step;
+setTimeout("Swirl()", 10);
+if (currStep>0.0540)
+{
+step+=0.002;
+if (document.layers)
+{
+ for ( i = 0 ; i < ns ; i++ )
+ {
+var temp="n"+i
+document.layers[temp].top =Ypos+cnter*Math.cos((currStep+i*4.5)/5)
+document.layers[temp].left=Xpos+cnter*Math.sin((currStep+i*4.5)/5)
+ }
+}
+else if (document.all)
+{
+for (i=0;i<ieDiv.all.c.all.length;i++)
+ {
+ieDiv.all.c.all[i].style.top=Ypos+cnter*Math.cos((currStep+i*4.5)/5)
+ieDiv.all.c.all[i].style.left=Xpos+cnter*Math.sin((currStep+i*4.5)/5)
+ }
+} 
+}
+if (step > 0.5)
+{
+step=0.5;
+cnter-=8;
+}
+if (document.layers)
+_y=-window.innerWidth;
+else if (document.all)
+_y=-document.body.clientWidth;
+if (cnter <= _y)
+{
+currStep=0;
+step=0.001;
+cnter=70;
+}
+}
+Swirl();
+// -->
+</SCRIPT>
+</textarea>
+
+<IMG id=balloon style="DISPLAY: none" src="Figuras/flor.gif">
+
+<SCRIPT language=javascript>
+var images=balloon.src;//Put your image name here!!  
+var amount=7;//Number of images here. Do not alter for this script!!
+var cnter=30;
+var step;
+var currStep = 0;
+var Xpos = 0;
+var Ypos = 0;
+if (document.all)
+{
+document.write('<div id="ieDiv" style="position:absolute;top:0px;left:0px">')
+document.write('<div id="c" style="position:relative">');
+for (n=0; n < amount; n++)
+document.write('<img src=" '+images+'" style="position:absolute;top:0px;left:0px">')
+document.write('</div>')
+document.write('</div>')
+
+function MsieMouseFollow(){
+ Xpos = document.body.scrollLeft+event.x-5;
+ Ypos = document.body.scrollTop+event.y-5;
+ }
+ document.onmousemove = MsieMouseFollow;
+}
+else if (document.layers)
+{
+window.captureEvents(Event.MOUSEMOVE);
+for (ns=0; ns < amount; ns++) 
+document.write("<LAYER NAME='n"+ns+"' LEFT=0 TOP=0><IMG SRC='"+images+"'></LAYER>");
+function NsMouseFollow(evnt){
+ Xpos = evnt.pageX-5;
+ Ypos = evnt.pageY-5;
+ }
+ window.onMouseMove = NsMouseFollow;
+}
+
+function Swirl(){
+if (currStep<0.0550)
+step=0.001;
+if (document.all)
+{
+ for (i=0;i<ieDiv.all.c.all.length;i++)
+ {
+ieDiv.all.c.all[i].style.top = Ypos+cnter*Math.cos((currStep+i*4.5)/5)*Math.sin((currStep)*150);
+ieDiv.all.c.all[i].style.left = Xpos+cnter*Math.sin((currStep+i*4.5)/5)*Math.sin((currStep)*150);
+ }
+}
+else if (document.layers)
+{
+ for ( i = 0 ; i < ns ; i++ )
+ {
+  var temp="n"+i
+  document.layers[temp].top = Ypos+cnter*Math.cos((currStep+i*4.5)/5)*Math.sin((currStep)*150);
+  document.layers[temp].left =Xpos+cnter*Math.sin((currStep+i*4.5)/5)*Math.sin((currStep)*150);
+ }
+}
+currStep += step;
+setTimeout("Swirl()", 10);
+if (currStep>0.0540)
+{
+step+=0.002;
+if (document.layers)
+{
+ for ( i = 0 ; i < ns ; i++ )
+ {
+var temp="n"+i
+document.layers[temp].top =Ypos+cnter*Math.cos((currStep+i*4.5)/5)
+document.layers[temp].left=Xpos+cnter*Math.sin((currStep+i*4.5)/5)
+ }
+}
+else if (document.all)
+{
+for (i=0;i<ieDiv.all.c.all.length;i++)
+ {
+ieDiv.all.c.all[i].style.top=Ypos+cnter*Math.cos((currStep+i*4.5)/5)
+ieDiv.all.c.all[i].style.left=Xpos+cnter*Math.sin((currStep+i*4.5)/5)
+ }
+} 
+}
+if (step > 0.5)
+{
+step=0.5;
+cnter-=8;
+}
+if (document.layers)
+_y=-window.innerWidth;
+else if (document.all)
+_y=-document.body.clientWidth;
+if (cnter <= _y)
+{
+currStep=0;
+step=0.001;
+cnter=70;
+}
+}
+Swirl();
+// -->
+</SCRIPT>

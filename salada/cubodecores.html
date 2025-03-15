@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<title>Cubo de cores seguras || Salada Digital</title>
+
+<meta http-equiv="Page-Enter" content="revealTrans(Duration=1.0,Transition=23)">
+<meta http-equiv="Page-Exit" content="revealTrans(Duration=1.0,Transition=23)">
+	
+<link type="text/css" rel="stylesheet" href="estilo.css">
+<link type="text/css" rel="stylesheet" href="cores.css">
+
+
+<SCRIPT LANGUAGE="JAVASCRIPT" TYPE="TEXT/JAVASCRIPT"/>
+<!-- HELEN FERNANDA AMA JAVASCRIPT
+
+if (top.location == self.location) {
+self.location.replace("index.html?cubodecores.html")
+}
+
+// HTML e CSS -->
+
+</SCRIPT>
+
+</head>
+
+<body onMouseOut="window.status='Salada Digital'; document.title='Salada Digital';">
+<table width=100% style="border:0;">
+<tr>
+<td width=50%>
+<h2 id=pre>Cubo de cores seguras</h2>
+<p id=pre>As 216 cores deste cubo devem aparecer da mesma forma em qualquer navegador. Passe o cursor sobre a cor para ver como ela fica no fundo da página e para saber seu código nos formatos hexadecimal e RGB.</p>
+
+<td width=50%>
+<h2 id=bra>Cubo de cores seguras</h2>
+<p id=bra>As 216 cores deste cubo devem aparecer da mesma forma em qualquer navegador. Passe o cursor sobre a cor para ver como ela fica no fundo da página e para saber seu código nos formatos hexadecimal e RGB.</p>
+</table>
+
+<BR>
+
+<center>
+<script>
+t='<table align=center cellpadding=1 cellspacing=1 style="border:0;">'
+c=new Array('00','33','66','99','cc','ff');
+r=new Array('0','51','102','153','204','255');
+p=new Array('0%','20%','40%','60%','80%','100%');
+for(i=0;i<6;i++){
+t+='<tr>'
+for(j=0;j<6;j++){
+t+='<td>'
+for(k=0;k<6;k++){
+L=c[i]+c[j]+c[k]; 
+M=r[i]+','+r[j]+','+r[k]; 
+G=p[i]+','+p[j]+','+p[k]; 
+t+='<td id=cub bgcolor=#'+L+' style="cursor:default;" title="#'+L+' = rgb('+M+') = rgb('+G+')" onMouseOver=body.style.backgroundColor="#'+L+'";body.style.scrollbarTrackColor="#'+L+'";window.status="#'+L+'_=_rgb('+M+')_=_rgb('+G+')";document.title="#'+L+'_=_rgb('+M+')_=_rgb('+G+')";></td>'
+}
+t+='</td>'
+}
+}
+t+='</tr>'
+document.write(t+'</table>');
+</script>
+</center>
+<BR>
+<hr>
+<center>
+<a href="javascript:history.go(-1);"><< Voltar</a> | <a href="javascript:history.go(1);">Avançar >></a>
+</center>
+
+<BR>
+</body>
+</html>

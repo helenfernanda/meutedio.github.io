@@ -1,0 +1,70 @@
+<head>
+<meta http-equiv="Page-Enter" content="revealTrans(Duration=1.0,Transition=23)">
+<meta http-equiv="Page-Exit" content="revealTrans(Duration=1.0,Transition=23)">
+<META HTTP-EQUIV="Content-Script-Type" CONTENT="text/javascript">
+<meta http-equiv=Pragma CONTENT=no-cache>
+<link type=text/css rel=stylesheet href=estilo.css>
+
+</head>
+
+<h2>Adicionar aos favoritos</h2>
+
+<p>Este código gera um link para que o visitante possa facilmente adicionar teu blog/site aos Favoritos de seu browser. Modifique:</p>
+
+<ul>
+<li>onde está <B>http://www.helenfernanda.kit.net</b> escreva o endereço correto de seu blog/site.
+<li>onde está escrito <B>Helen Fernanda</b> escreva o nome correto de seu blog/site.
+<li>onde está escrito <b>Adicione aos favoritos</b> escreva o texto desejado.
+</ul>
+
+<center>
+<a onclick="window.external.AddFavorite('about:blank','Página em branco');">Adicione aos favoritos</a>
+<BR><BR>
+
+<textarea readonly><a style="cursor:hand;" onclick="window.external.AddFavorite('http://www.helenfernanda.kit.net','Helen Fernanda');">Adicione aos favoritos</a></textarea>
+
+<hr>
+
+<p>Este código gera um botão com a mesma utilidade. Modifique:</p>
+
+<ul>
+<li>onde está escrito <b>http://www.helenfernanda.kit.net</b> digite o endereço de seu blog/site.
+<li>onde está escrito <b>Helen Fernanda</b> digite o nome de seu blog/site.
+<li>outras modificações são opcionais como <b>cores</b>, <b>bordas</b>, <b>fonte</b> e <b>mensagem</b>.</p>
+</ul>
+
+
+<table align=center style='text-align:center;' colspan=10 cellpadding=10>
+<tr>
+<td>
+<INPUT onclick='window.external.AddFavorite("http://www.helenfernanda.kit.net", "Net Mania");' type=button value='Favoritos'>
+
+<br>
+<textarea readonly>
+<INPUT onclick='window.external.AddFavorite("http://www.helenfernanda.kit.net", "Helen Fernanda");' type=button value='Favoritos'>
+</textarea>
+
+<td>
+<INPUT onclick='window.external.AddFavorite("http://www.helenfernanda.kit.net", "Net Mania");' type=button value='Favoritos' style="background:azure; border: dotted skyblue 1; font-family:verdana; color:navy; font-size:11;">
+
+<BR>
+<textarea readonly>
+<INPUT onclick='window.external.AddFavorite("http://www.helenfernanda.kit.net", "Helen Fernanda");' type=button value='Favoritos' style="background:azure; border: dotted skyblue 1; font-family:verdana; color:navy; font-size:11;">
+</textarea>
+
+<TR>
+<td>
+<INPUT onclick='window.external.AddFavorite("http://www.helenfernanda.kit.net", "Net Mania");' type=button value='Favoritos' style="background:lightgreen; border:outset #f0fff0 1; font-family:verdana; color:green; font-size:11;">
+
+<BR>
+<textarea readonly>
+<INPUT onclick='window.external.AddFavorite("http://www.helenfernanda.kit.net", "Helen Fernanda");' type=button value='Favoritos' style="background:lightgreen; border:outset #f0fff0 1; font-family:verdana; color:green; font-size:11;">
+</textarea>
+
+<td>
+<INPUT onclick='window.external.AddFavorite("http://www.helenfernanda.kit.net", "Net Mania");' type=button value='Favoritos' style="background:navy; border:double 3 skyblue; font-family:verdana; color:azure; font-size:11;">
+
+<BR>
+<textarea readonly>
+<INPUT onclick='window.external.AddFavorite("http://www.helenfernanda.kit.net", "Helen Fernanda");' type=button value='Favoritos' style="background:navy; border:double 3 skyblue; font-family:verdana; color:azure; font-size:11;">
+</textarea>

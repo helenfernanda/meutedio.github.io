@@ -1,0 +1,35 @@
+@import url(rosa.css);
+body {background:#99ff99;
+	 scrollbar-track-color:#99ff99;
+	 scrollbar-3dlight-color:#99ff99;
+	 scrollbar-highlight-color:#99ff99;
+	 scrollbar-shadow-color:#99ff99;
+	 scrollbar-darkshadow-color:#99ff99;
+	 scrollbar-arrow-color:#99ff99;}
+	 
+body, table {color:#009900;}	 
+
+#back {background:#99ff99 url(bg_verde.gif) right top repeat-y;}
+	 
+a {color:#0099cc;}
+a:link {color:#006699;}
+a:hover {background:green; color:white;}
+
+button {background: #ffffff;
+	border-color: lime;
+	border-right-color : darkgreen;
+	border-bottom-color: darkgreen;
+	color :darkgreen;}
+	
+h1, h2, h3, h4, h5, #titulo {color:#09b204;}
+input {border-color:rgb(0,166,0); color:darkgreen;}
+hr {color:rgb(0,166,0); background:rgb(0,166,0);}
+ul {list-style-image:url(lista_verde.jpg);}
+
+textarea  {color:darkgreen;
+	background :#ffffff;
+	border-color:green;}
+
+.autor, #autor, #menorhot {color:336633;}
+#caixa {border-color:#eeffee;}
+#quote {color:rgb(6,152,107);}
