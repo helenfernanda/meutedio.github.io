@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<OpenSearchDescription xmlns="http://www.opensearch.org/Specifications/OpenSearch/1.1">
+	<ShortName>Testes HTMHelen</ShortName>
+	<Description>Busca no blog Testes HTMHelen</Description>
+	<Tags>testeshtmhelen</Tags>
+	<Contact>contato@htmhelen.com</Contact>
+	<Url type="application/atom+xml" 
+        template="http://blogsearch.google.com.br/blogsearch_feeds?hl=pt-BR&um=1&q=site:http://www.htmhelen.com+{searchTerms}&ie=utf-8&num=10&output=atom"/>
+	<Url type="application/rss+xml" 
+        template="http://blogsearch.google.com.br/blogsearch_feeds?hl=pt-BR&um=1&q=site:http://www.htmhelen.com+{searchTerms}&ie=utf-8&num=10&output=rss"/>
+	<Url type="text/html" method="GET" template="http://www.google.com.br/cse?cx=partner-pub-2810932839099491%3Ajw7n8ai459q&amp;ie=ISO-8859-1&amp;q={searchTerms}"/>
+	<Url type="application/x-suggestions+json" method="GET" template="http://suggestqueries.google.com/complete/search?hl=pt-BR&amp;output=firefox&amp;client=firefox&amp;q={searchTerms}"></Url>
+	<LongName>HTMHelen: partilhando conhecimento com blogueiros</LongName>
+	<Image height="16" width="16">http://htmhelen.com.sapo.pt/favicon.ico</Image>
+	<Developer>Helen Fernanda Martins</Developer>
+	 <Language>pt-br</Language>
+</OpenSearchDescription>

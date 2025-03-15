@@ -1,0 +1,22 @@
+body {color:#ccc; font-family:trebuchet ms; background:#333;border:0px; margin:0px;}
+div#contem {padding:20px; font-size:1em;}
+ul#nav li {display:inline; padding:10px}
+a {color:#007FDB}
+h2 {color:#f90; font-size:3.5em; margin: 1em auto 0.3em; text-align:center}
+dl {margin:0 0 1em; overflow:auto; width:100%;}
+dt, dd.price {font-size:1.8em; font-weight:bold}
+dt {color:#99cc00; float:left; padding-right:3px;}
+dd {margin:0; padding-bottom:20px;}
+dd.valor {font-size:25px; color:#ccc; float:right; padding-left:3px}
+dd.detalhes {font-style:italic; color:#fff; float:left; padding:3px 0; width:100%;border-top:1px dashed #ccc;}
+p {font-size:0.9em;text-align:left; margin-top:60px;}
+
+#ring {padding:20px;}
+#ring h1 {font-size:40px;}
+#ring h2 {font-size:30px;}
+#ring p {margin-top:auto;}
+#ring dl { -moz-column-width: 330px; -webkit-column-width: 330px; -o-column-width:330px; column-width:330px;}
+#ring dt {text-align:center; float:none; padding-right:inherit; margin-top:25px; margin-bottom:10px; font-size:13px;   break-before:auto; break-inside: avoid-column; break-after: avoid-column;}
+#ring dd {margin:auto; text-align:center; break-before:avoid-column; break-inside: avoid-column; break-after:auto;}
+#ring a {color:skyblue;}
+#ring a:hover {color:linen;}

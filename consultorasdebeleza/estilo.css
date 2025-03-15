@@ -1,0 +1,22 @@
+body {font-family:'century gothic','trebuchet ms';}
+p {text-align:justify; text-indent:20px;}
+h1, h2, h3, h4, h5, h6 {font-family:'century gothic',georgia; margin-top:20px; margin-bottom:10px; margin-left:auto; margin-right:auto; padding:0px; text-transform:none;}
+h1 {font-size:30px;}
+h2 {font-size:25px;}
+h2.date-header {font-size:15px; text-transform:none; text-align:right;}
+h3, h3.post-title, h3.entry-title {font-size:23px;}
+h4 {font-size:21px;}
+h5 {font-size:19px;}
+h6 {font-size:17px;}
+#AdSense1 {margin-left:auto; margin-right:auto; text-align:center;}
+#fonte {text-align:right;}
+blockquote {border-left:2px hotpink solid; padding-left:5px; margin:20px; margin-left:auto; font-style:italic; font-family:georgia; color:#000; font-size:17px;}
+.comment-form {margin-left:auto; margin-right:auto;}
+.comments p, #comments p {text-indent:0px;}
+#endereco {background:#fff0ff; border-left:hotpink 2px solid; margin-left:10px; padding-left:10px;}
+#update {background:#f0f0ff; border-left:dodgerblue 2px solid; margin:20px; padding-left:10px;}
+hr {border:0px; background:#fff; color:#fff; border-top:1px dashed rgb(255, 204, 0);}
+dd {margin-bottom:15px;}
+#twocols {-webkit-column-count:2; -webkit-column-rule:1px dashed rgb(255, 204, 0); column-count:2; column-rule:1px dashed rgb(255, 204, 0); -moz-column-count:2; -moz-column-rule: 1px dashed rgb(255, 204, 0); margin-left:auto; margin-right:auto; -o-column-count:2; -o-column-rule:1px dashed rgb(255, 204, 0);}
+
+

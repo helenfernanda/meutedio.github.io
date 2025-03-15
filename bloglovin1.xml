@@ -1,0 +1,12 @@
+<FeedFlareUnit>
+<Catalog>
+    <Title>Adicionar ao Bloglovin</Title>
+
+    <Description>Siga o blog no Bloglovin.</Description>
+</Catalog>
+<FeedFlare>
+    <Text>Bloglovin.</Text>
+    <Image src="http://www.bloglovin.com/widget/bilder/en/widget.gif"/>
+    <Link href="http://www.bloglovin.com/blog/4456163/helen-fernanda/follow"/>
+</FeedFlare>
+</FeedFlareUnit>

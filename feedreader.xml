@@ -1,0 +1,12 @@
+<FeedFlareUnit>
+<Catalog>
+    <Title>Adicionar ao FeedReader</Title>
+
+    <Description>Siga Helen Fernanda no FeedReader.</Description>
+</Catalog>
+<FeedFlare>
+    <Text>FeedReader.</Text>
+    <Image src="http://lh4.googleusercontent.com/-OjCdr3ENX48/UBWB2BmGmwI/AAAAAAAAQso/ph-V6zoeuXk/s100/feedreader.gif"/>
+    <Link href="http://feedreader.com/myfeeds/add.html#url=http%3A//feeds.feedburner.com/helenfernanda"/>
+</FeedFlare>
+</FeedFlareUnit>

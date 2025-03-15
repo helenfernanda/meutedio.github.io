@@ -1,0 +1,12 @@
+<FeedFlareUnit>
+<Catalog>
+    <Title>Adicionar ao NetworkedBlogs</Title>
+
+    <Description>Siga Helen Fernanda no NetworkedBlogs.</Description>
+</Catalog>
+<FeedFlare>
+    <Text>NetworkedBlogs.</Text>
+    <Image src="http://static.networkedblogs.com/static/images/logo_small.png"/>
+    <Link href="http://www.networkedblogs.com/blog/helen-fernanda"/>
+</FeedFlare>
+</FeedFlareUnit>
