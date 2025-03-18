@@ -34,24 +34,22 @@ a:hover {border-bottom:1px dashed #ccc;}
 </head>
 <body>
 	<div id="topo"></div>
-	
-
-
+<script>$("#topo").load("template.html#menudecima");</script>	
 		<h1>meuted.io</h1>
 
 	<p>Este é apenas um site acessório do blog <a target="_blank" href="http://www.meutedio.com">www.meutedio.com</a>.</p>
 	
 <!-- início busca Google -->
  <div id="buscar"></div>
-<script>
-$("#topo").load("template.html#menudecima");
-$("#buscar").load("template.html#busca");
-$("#menus").load("template.html#menu");
-</script>
+<script>$("#buscar").load("template.html#busca");</script>
+
+
 <!-- fim busca Google -->
 
 <div id="menus"></div>
-
+<script>
+	$("#menus").load("template.html#menu");
+	</script>
 	
 </body>	
 
