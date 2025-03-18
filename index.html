@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<div id="head"></div>
 	<script>
-		$("head").load("tagsdohead.html");
+		$("#head").load("tagsdohead.html");
 	</script>
 	<style>
 	
@@ -15,7 +16,7 @@
 ::-webkit-scrollbar-track-piece {background:#333;} /* fundo da barra de rolagem, parte que ainda falta rolar */
 ::-webkit-scrollbar-corner {background:#333;} /* canto inferior direito da barra de rolagem */
 
-.gcse-searchresults{background-color:#fff,0;}	
+.gcse-searchresults{background-color:rgba(255,255,255,0);}	
 body {margin:30px; font-family:'trebuchet ms', georgia, serif; font-size:20px;}
 a, a:hover, a:link {color:#ccc; text-decoration:none;}
 a:hover {border-bottom:1px dashed #ccc;}
@@ -34,6 +35,7 @@ a:hover {border-bottom:1px dashed #ccc;}
 	<div style='position:fixed; right:0; margin-right:0; text-align:right; float:right;'>
 	</div>
 	
+
 	
 
 <!-- início busca Google -->
@@ -43,9 +45,7 @@ a:hover {border-bottom:1px dashed #ccc;}
 <div class="gcse-searchresults"></div>
 <!-- fim busca Google -->
 </dl>
-	
-	<h2 id='menu'>Menu</h2>
-	
+
 	<ul>
 		<li><a href="tag-audio.html">Tag &lt;audio&gt;</a></li>
 		<li><a href="tag-video.html">Tag &lt;video&gt;</a></li>
@@ -60,6 +60,10 @@ a:hover {border-bottom:1px dashed #ccc;}
 		<!-- <li><a href="streampad.html">Streampad - mp3 player</a></li> -->
 	</ul>
 
+	<div id="testes"></div>
+<script>
+		$("#testes").load("testes.html");
+	</script>
 
 	<!-- starts Google Analytics -->
 	<script>
