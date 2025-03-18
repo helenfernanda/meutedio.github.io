@@ -25,7 +25,7 @@
     background-clip: text !important;
     text-fill-color: transparent !important;
   }
-  div {
+  div:has(code) {
     display: inline-block;
     float: left;
     margin-left: 10px;
@@ -84,13 +84,16 @@
 </head>
 
 <body>
-  <p id="topo"></p>
+  <div id="topo"></div>
   <script>$( "#topo" ).load( "template.html #menudecima" );</script>	
   
   <h1>Testando Cores e Degradê</h1>
+  <!-- início busca Google -->
   <script async src="https://cse.google.com/cse.js?cx=partner-pub-2810932839099491:jw7n8ai459q"></script>
-  <p id="buscar"></p>
+  <div id="buscar"></div>
   <script>$( "#buscar" ).load( "template.html #busca" );</script>
+  <!-- fim busca Google -->
+
 <p>Código do degradê do título:</p>
     <code>  h1 {
     font-family: "Lucida Handwriting";
@@ -113,7 +116,7 @@
   }</code>
 
     <p>Caixas:</p>
-<div class='colorida'><code>.colorida {background-color: #eec0c6; background-image: linear-gradient(315deg, orange 0%, #7ee8fa 74%);}</code></div>
+    <div class='colorida'><code>.colorida {background-color: #eec0c6; background-image: linear-gradient(315deg, orange 0%, #7ee8fa 74%);}</code></div>
 
 <div class="arcoiris"><code>.arcoiris {
     color: #fff;
