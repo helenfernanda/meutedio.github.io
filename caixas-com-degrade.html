@@ -78,9 +78,18 @@
   code {background-color:rgba(255,255,255,0.5); font-family:monospace;color:#000}
   code:hover {color:#000;font-weight:bold; background-color:#fff;}
   code:active {color:#fff;background-color:#000;}
-  </style></head>
+  </style>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
 
-<body><h1>Testando Cores e Degradê</h1>
+<body>
+  <p id="topo"></p>
+  <script>$( "#topo" ).load( "template.html #menudecima" );</script>	
+  
+  <h1>Testando Cores e Degradê</h1>
+  <div id="buscar"></div>
+  <script>$( "#buscar" ).load( "template.html #busca" );</script>
 <p>Código do degradê do título:</p>
     <code>  h1 {
     font-family: "Lucida Handwriting";
