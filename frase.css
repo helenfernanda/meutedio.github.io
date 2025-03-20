@@ -1,3 +1,4 @@
-#newquote {color:gray; text-align:right; font-family:verdana; font-size:11px; padding:5px; width:300px;}
-#newquote i {display:block; color:black; font-family:'droid serif'; font-size:17px; margin-bottom:10px;}
-div.credito {display:block; text-align:left;}
+blockquote {border:2px dashed #99cc00; background:#f0fff0; color:darkgreen;}
+#newquote q {color:#000; text-align:left; padding:5px; font-size:20px;}
+#newquote {color:#000; text-align:left; padding:5px; font-size:15px;}
+div.credito {display:block; text-align:right; font-size:10px;}
