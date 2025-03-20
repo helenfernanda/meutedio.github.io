@@ -1,4 +1,5 @@
-body {color:#ccc; font-family:trebuchet ms; background:#333; border:0px; margin:10px; margin-top:0px; padding-top:0; font-size:1em;}
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+body {color:#ccc; font-family:"'Winky Sans','trebuchet ms'"; background:#333; border:0px; margin:10px; margin-top:0px; padding-top:0; font-size:1em;}
 body.white {color:#666; background:#fff; border:0px;}
 
 body::-webkit-scrollbar {background:#333; width:15px; height:15px;} /* barra de rolagem toda */
